@@ -3,7 +3,8 @@ title: "Evaluating RAG-Enhanced LLM Systems"
 description: "Evaluate the LLM System, not the LLM Model. A structured approach to holistic evaluation of RAG-enhanced LLM systems."
 publishDate: "2024-12-18"
 tags: ["RAG", "AI", "User Feedback", "Continuous Improvement"]
-categories: ["RAG"]
+seriesId: "rag"
+orderInSeries: 1
 draft: false
 ---
 
