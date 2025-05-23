@@ -7,6 +7,7 @@ import robotsTxt from "astro-robots-txt";
 import webmanifest from "astro-webmanifest";
 import { defineConfig, envField } from "astro/config";
 import { siteConfig } from "./src/site.config";
+import partytown from '@astrojs/partytown';
 
 // Remark plugins
 import remarkDirective from "remark-directive"; /* handle ::: directives as nodes */
@@ -75,6 +76,11 @@ export default defineConfig({
         insertFaviconLinks: false,
         insertThemeColorMeta: false,
         insertManifestLink: false,
+      },
+    }),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"], // Important for GA
       },
     }),
   ],

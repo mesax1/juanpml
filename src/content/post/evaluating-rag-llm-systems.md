@@ -4,7 +4,7 @@ description: "Evaluate the LLM System, not the LLM Model. A structured approach 
 publishDate: "2024-12-18"
 tags: ["RAG", "AI", "User Feedback", "Continuous Improvement"]
 seriesId: "rag"
-orderInSeries: 1
+orderInSeries: 2
 draft: false
 ---
 

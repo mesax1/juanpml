@@ -73,10 +73,17 @@ const { headings } = await render(post);
 	
 	<div class="mt-6 flex sm:grid-cols-[auto_1fr] md:items-start gap-x-8">
 		<article class="grid flex-grow grid-cols-1 break-words pt-4" data-pagefind-body>
-			<div class="prose prose-citrus max-w-none flex-grow prose-headings:font-semibold prose-headings:text-accent-base prose-headings:before:text-accent-two sm:prose-headings:before:content-['#'] sm:prose-th:before:content-none">
+			<div class="prose prose-citrus max-w-none flex-grow prose-headings:font-semibold prose-headings:text-accent-base prose-headings:before:text-accent-two sm:prose-th:before:content-none">
 				<slot />
 			</div>
 			<WebMentions />
+
+			<!-- 👇 CTA ADDED HERE 👇 -->
+			<div class="flex justify-center my-6">
+				<a href="https://app.formbricks.com/s/cm4gqd5qo000113mcg2id06m6" target="_blank" rel="noopener" class="relative flex items-center justify-center h-10 px-6 rounded-lg shadow-lg hover:brightness-110 transition-all bg-gradient-to-r from-accent-one to-accent-two">
+					<span class="text-bgColor font-semibold">Schedule Your AI Consultation</span>
+				</a>
+			</div>
 		</article>
 		{!!headings.length && (
 			<aside 
