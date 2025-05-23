@@ -36,4 +36,34 @@ const meta = {
 		</p>
 	</div>
 
+	<!-- Notes Section -->
+	{
+		latestNotes.length > 0 && (
+			<section class="mt-12">
+				<h2 class="title mb-6 text-accent-two">
+					<a href="/notes/">Notes</a>
+				</h2>
+				<div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+					{
+						latestNotes.map((note) => (
+							<div>
+								<Note note={note} as="h4" isPreview />
+							</div>
+						))
+					}
+				</div>
+			</section>
+		)
+	}
+
+	<!-- ADDED Awards & Scholarships section here -->
+	<div class="prose prose-citrus max-w-none mt-12">
+		<h2 class="title text-xl">Awards & Scholarships</h2>
+		<ul class="list-inside list-disc">
+			<li><strong>7th Place:</strong> EURO Meets NeurIPS 2022 Vehicle Routing Competition</li>
+			<li><strong>9th Place:</strong> Amazon 2021 Last-Mile Routing Research Challenge</li>
+			<li><strong>Ph.D. Funding Grant:</strong> Fully funded by Universidad EAFIT, 2019-2022</li>
+		</ul>
+	</div>
+
 </PageLayout>
