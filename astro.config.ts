@@ -11,11 +11,13 @@ import partytown from '@astrojs/partytown';
 
 // Remark plugins
 import remarkDirective from "remark-directive"; /* handle ::: directives as nodes */
+import remarkMath from 'remark-math';
 import { remarkAdmonitions } from "./src/plugins/remark-admonitions"; /* add admonitions */
 import { remarkReadingTime } from "./src/plugins/remark-reading-time";
 
 // Rehype plugins
 import rehypeExternalLinks from "rehype-external-links";
+import rehypeKatex from 'rehype-katex';
 import rehypeUnwrapImages from "rehype-unwrap-images";
 
 import rehypePrettyCode from "rehype-pretty-code";
@@ -87,7 +89,12 @@ export default defineConfig({
   markdown: {
     syntaxHighlight: false,
 
-    remarkPlugins: [remarkReadingTime, remarkDirective, remarkAdmonitions],
+    remarkPlugins: [
+      remarkReadingTime, 
+      remarkDirective, 
+      remarkAdmonitions,
+      remarkMath,
+    ],
     remarkRehype: {
       footnoteLabelProperties: {
         className: [""],
@@ -116,6 +123,7 @@ export default defineConfig({
         },
       ],
       rehypeUnwrapImages,
+      rehypeKatex,
     ],
   },
   // https://docs.astro.build/en/guides/prefetch/
