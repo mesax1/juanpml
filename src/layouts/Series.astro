@@ -1,8 +1,9 @@
 ---
-import { type CollectionEntry, render } from "astro:content";
+import { type CollectionEntry, render, getCollection } from "astro:content";
 import TOC from "@/components/blog/TOC.astro";
 import BaseLayout from "./Base.astro";
 import SeriesPanel from "@/components/SeriesPanel.astro";
+import FormattedDate from "@/components/FormattedDate.astro";
 import { Icon } from "astro-icon/components";
 
 interface Props {
@@ -13,6 +14,12 @@ const { series } = Astro.props;
 const { title, description } = series.data;
 
 const { headings } = await render(series);
+
+// Add this section to fetch posts for this series
+const posts = await getCollection("post");
+const seriesPosts = posts
+	.filter((p) => p.data.seriesId === series.id)
+	.sort((a, b) => (a.data.orderInSeries || 0) - (b.data.orderInSeries || 0));
 ---
 
 <BaseLayout meta={{ description, title }}>
@@ -64,10 +71,90 @@ const { headings } = await render(series);
 		{description}
 	</p>
 
+	<!-- Add the series posts section here -->
+	{seriesPosts.length > 0 && (
+		<section class="mt-8">
+			<h2 class="title mb-6 flex items-center gap-2">
+				<Icon aria-hidden="true" class="h-6 w-6" focusable="false" name="solar:notes-bold" />
+				Posts in this Series
+			</h2>
+			<div class="grid gap-4">
+				{seriesPosts.map((post, index) => {
+					const { publishDate, updatedDate } = post.data;
+					const showUpdatedDate = updatedDate && updatedDate.getTime() > publishDate.getTime();
+					
+					return (
+						<article class="rounded-lg border border-special-light bg-bgColor/50 p-4 hover:bg-bgColor/80 transition-colors">
+							<div class="flex items-start gap-3">
+								<span class="flex h-8 w-8 items-center justify-center rounded-full bg-accent-base text-sm font-semibold text-bgColor flex-shrink-0 mt-1">
+									{index + 1}
+								</span>
+								<div class="flex-1 min-w-0">
+									<div class="flex flex-col sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+										<div class="flex-1 min-w-0">
+											<h3 class="font-semibold text-accent-base hover:text-accent-two">
+												<a href={`/posts/${post.id}/`} class="block">
+													{post.data.title}
+												</a>
+											</h3>
+											{post.data.description && (
+												<p class="mt-1 text-sm text-light line-clamp-2">
+													{post.data.description}
+												</p>
+											)}
+										</div>
+										<div class="flex-shrink-0 text-sm text-lighter mt-2 sm:mt-0 sm:text-right">
+											<div class="flex items-center gap-1">
+												<Icon aria-hidden="true" class="h-3 w-3" focusable="false" name="hugeicons:calendar-03" />
+												<FormattedDate
+													date={publishDate}
+													dateTimeOptions={{
+														year: "numeric",
+														month: "short",
+														day: "2-digit",
+													}}
+												/>
+											</div>
+											{showUpdatedDate && (
+												<div class="mt-1 text-xs text-accent-two">
+													Updated: <FormattedDate
+														date={updatedDate}
+														dateTimeOptions={{
+															year: "numeric",
+															month: "short",
+															day: "2-digit",
+														}}
+													/>
+												</div>
+											)}
+										</div>
+									</div>
+								</div>
+								<Icon 
+									aria-hidden="true" 
+									class="h-5 w-5 text-accent-base flex-shrink-0 mt-1" 
+									focusable="false" 
+									name="solar:arrow-right-line-duotone" 
+								/>
+							</div>
+						</article>
+					)
+				})}
+			</div>
+		</section>
+	)}
+
 	<div class="mt-6 flex sm:grid-cols-[auto_1fr] md:items-start gap-x-8">
 		<article class="grid flex-grow grid-cols-1 break-words pt-4" data-pagefind-body>
 			<div class="prose prose-citrus max-w-none flex-grow prose-headings:font-semibold prose-headings:text-accent-base prose-headings:before:text-accent-two sm:prose-headings:before:content-['#'] sm:prose-th:before:content-none">
 				<slot />
+			</div>
+
+			<!-- 👇 CTA ADDED HERE 👇 -->
+			<div class="flex justify-center my-6">
+				<a href="https://calendar.app.google/VALDzjK7GqCTvYz56" target="_blank" rel="noopener" class="relative flex items-center justify-center min-h-[2.5rem] px-3 py-2 sm:px-6 sm:py-0 sm:h-10 rounded-lg shadow-lg hover:brightness-110 transition-all bg-gradient-to-r from-accent-one to-accent-two">
+					<span class="text-bgColor font-semibold text-sm sm:text-base text-center">Schedule Your AI Consultation</span>
+				</a>
 			</div>
 		</article>
 		{
