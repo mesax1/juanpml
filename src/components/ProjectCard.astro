@@ -1,0 +1,116 @@
+---
+import { type CollectionEntry } from 'astro:content';
+
+// Define a more specific type for the project prop based on your schema
+// This assumes your schema definition is accessible or correctly inferred by Astro
+export interface Props {
+  project: CollectionEntry<'projects'>; 
+}
+
+const { project } = Astro.props;
+const { data, id } = project;
+const { title, clientOrCompany, displayYear, shortDescription, technologies, imageUrls } = data;
+
+const primaryImageUrl = imageUrls && imageUrls.length > 0 ? imageUrls[0] : undefined;
+const projectLink = `/projects/${id}`;
+---
+
+<style>
+  .project-card-image {
+    width: 100%;
+    height: 200px; /* Or a height that suits your design */
+    object-fit: cover; /* Ensures the image covers the area, might crop */
+    border-top-left-radius: 0.5rem; /* Match card border radius */
+    border-top-right-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .project-card {
+    border: 1px solid #e2e8f0; /* Tailwind's gray-300 */
+    border-radius: 0.5rem; /* Tailwind's rounded-lg */
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind's shadow-md */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    text-decoration: none; /* Remove underline from link */
+  }
+  .project-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Tailwind's shadow-lg */
+    transform: translateY(-4px);
+  }
+  .project-card-content {
+    padding: 1.5rem; 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .project-title {
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 0.5rem;
+    color: #1a202c; /* gray-900 */
+  }
+  .project-company {
+    font-size: 0.875rem; 
+    color: #4a5568; /* gray-700 */
+    margin-bottom: 0.25rem;
+  }
+  .project-year {
+    font-size: 0.875rem; 
+    color: #718096; /* gray-600 */
+    margin-bottom: 1rem;
+  }
+  .project-description-text {
+    font-size: 1rem; 
+    color: #2d3748; /* gray-800 */
+    margin-bottom: 1rem;
+    flex-grow: 1; 
+    line-height: 1.6;
+  }
+  .project-technologies {
+    margin-top: auto; /* Push to bottom if description is short */
+    padding-top: 1rem; /* Add some space above techs */
+  }
+  .project-technologies strong {
+    font-weight: 500; 
+    font-size: 0.875rem;
+    color: #4a5568; /* gray-700 */
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .tech-tag {
+    display: inline-block;
+    background-color: #edf2f7; /* gray-200 */
+    color: #4a5568; /* gray-700 */
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px; /* rounded-full */
+    font-size: 0.75rem; /* text-xs */
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  /* Removed .project-links as the card itself is the link */
+</style>
+
+<a href={projectLink} class="project-card">
+  {primaryImageUrl && <img src={primaryImageUrl} alt={title} class="project-card-image" />}
+  <div class="project-card-content">
+    <h3 class="project-title">{title}</h3>
+    {clientOrCompany && <p class="project-company">{clientOrCompany}</p>}
+    <p class="project-year">{displayYear}</p>
+    <p class="project-description-text">{shortDescription}</p>
+
+    {technologies && technologies.length > 0 && (
+      <div class="project-technologies">
+        <strong>Technologies:</strong>
+        <div>
+          {technologies.map((tech: string) => (
+            <span class="tech-tag">{tech}</span>
+          ))}
+        </div>
+      </div>
+    )}
+    <!-- Roles and specific contra/project links are removed as they are on the detail page -->
+  </div>
+</a> 

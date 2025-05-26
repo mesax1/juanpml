@@ -1,0 +1,67 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getCollection } from 'astro:content';
+import ProjectCard from "@/components/ProjectCard.astro";
+import type { SiteMeta } from "@/types";
+import type { CollectionEntry } from 'astro:content';
+
+const meta: SiteMeta = {
+  title: "Projects",
+  description: "AI Projects of some of my clients.",
+  articleDate: undefined,
+  ogImage: undefined,
+};
+
+const allProjects: CollectionEntry<'projects'>[] = await getCollection('projects', ({ data }) => {
+  return data.draft !== true;
+});
+
+// Sort projects by the 'order' field in frontmatter, then by title if order is the same or undefined
+const sortedProjects = allProjects.sort((a, b) => {
+  const orderA = a.data.order ?? Infinity;
+  const orderB = b.data.order ?? Infinity;
+  if (orderA !== orderB) {
+    return orderA - orderB;
+  }
+  return a.data.title.localeCompare(b.data.title);
+});
+
+---
+
+<Base meta={meta}>
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+      gap: 2rem; /* Spacing between cards */
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .page-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-top: 2rem;
+    }
+    .page-header h1 {
+      font-size: 2.5rem; /* Tailwind's text-4xl */
+      font-weight: 700; /* Tailwind's font-bold */
+      margin-bottom: 0.5rem;
+    }
+    .page-header p {
+      font-size: 1.125rem; /* Tailwind's text-lg */
+      color: #4a5568; /* Tailwind's gray-700 */
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+  <div class="page-header">
+    <h1>{meta.title}</h1>
+    <p>{meta.description}</p>
+  </div>
+  <div class="projects-grid">
+    {sortedProjects.map(project => (
+      <ProjectCard project={project} />
+    ))}
+  </div>
+</Base> 

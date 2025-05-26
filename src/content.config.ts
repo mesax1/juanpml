@@ -59,7 +59,25 @@ const series = defineCollection({
 		featured: z.boolean().default(false), // Mark for popular series
 	}),
 });
+
+// Projects
+const projects = defineCollection({
+	loader: glob({ base: "./src/content/projects", pattern: "**/*.{md,mdx}" }),
+	schema: z.object({
+		title: z.string(),
+		clientOrCompany: z.string().optional(),
+		displayYear: z.string(),
+		shortDescription: z.string(), // For the card on the main projects page
+		technologies: z.array(z.string()).optional(),
+		roles: z.array(z.string()).optional(),
+		contraLink: z.string().url().optional(),
+		projectUrl: z.string().url().optional(),
+		imageUrls: z.array(z.string().url().or(z.string().startsWith('/'))).optional(), // URLs or local paths starting with /
+		order: z.number().optional(), // For manually ordering projects on the listing page
+		draft: z.boolean().optional().default(false), // To hide projects if needed
+	}),
+});
 // End
 
 // Series
-export const collections = { post, note, series };
+export const collections = { post, note, series, projects };
