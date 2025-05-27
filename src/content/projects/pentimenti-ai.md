@@ -27,11 +27,6 @@ Pentimenti.ai is a specialized platform that develops AI solutions to simplify a
 - Implemented template optimization algorithms based on historical success rates
 - Developed content recommendation engines for proposal enhancement
 
-### Sales Process Optimization
-- Created predictive models for tender success probability assessment
-- Implemented automated lead scoring and opportunity prioritization
-- Developed intelligent workflow automation for sales pipeline management
-
 ## Impact
 
 The AI-enhanced sales and tender platform significantly reduced the time and effort required for proposal preparation while improving success rates. The automated analysis and generation capabilities allowed sales teams to focus on strategy and relationship building rather than manual document processing.

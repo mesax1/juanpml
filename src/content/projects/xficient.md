@@ -2,9 +2,9 @@
 title: "Xficient - AI-Powered Healthcare Documentation"
 shortDescription: "AI-powered healthcare documentation administration system"
 clientOrCompany: "Xficient"
-period: "2023-2024"
-displayYear: "2024"
-technologies: ["Python", "Machine Learning", "Natural Language Processing", "Healthcare APIs", "Document Processing", "AI/ML"]
+period: "2025"
+displayYear: "2025"
+technologies: ["Python", "LLMs", "Langgraph", "Langsmith", "PostgreSQL", "OCR"]
 imageUrls: []
 projectUrl: "https://xficient.com/"
 order: 3

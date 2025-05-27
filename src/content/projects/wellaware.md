@@ -2,8 +2,8 @@
 title: "WellAware - Industrial IoT Data Analytics"
 shortDescription: "Industrial automation and data analytics solutions for oil & gas operations"
 clientOrCompany: "WellAware"
-period: "2023-2024"
-displayYear: "2024"
+period: "2024-2025"
+displayYear: "2025"
 technologies: ["Python", "Data Analytics", "IoT", "Machine Learning", "Time Series Analysis", "Industrial Automation", "Oil & Gas"]
 imageUrls: []
 projectUrl: "https://wellaware.us/"
@@ -13,7 +13,7 @@ draft: false
 
 ## Project Overview
 
-WellAware is a leading provider of industrial automation and data analytics solutions for the oil and gas industry. I collaborated with their team to enhance their data analytics capabilities and develop advanced machine learning solutions for industrial IoT applications.
+WellAware is a leading provider of industrial automation and data analytics solutions for the oil and gas industry. I collaborated with their team to enhance their data analytics capabilities and develop advanced machine learning solutions for industrial IoT monitoring applications.
 
 ## Key Contributions
 

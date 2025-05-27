@@ -13,24 +13,15 @@ draft: false
 
 ## Project Overview
 
-Bucket.io is a comprehensive marketing technology platform that helps businesses grow leads and increase revenue through high-converting quiz funnels. I collaborated with their team to integrate AI and machine learning capabilities for quiz optimization, lead scoring, and conversion rate enhancement.
+Bucket.io is a comprehensive marketing technology platform that helps businesses grow leads and increase revenue through high-converting quiz funnels. I collaborated with their team to integrate Generative AI capabilities for automated marketing funnel quiz creation, and chatbot integration.
 
 ## Key Contributions
 
-### AI-Powered Quiz Optimization
-- Developed machine learning models for dynamic quiz question selection and personalization
-- Implemented intelligent quiz flow optimization based on user behavior patterns
-- Created automated A/B testing systems for quiz performance improvement
-
-### Lead Scoring and Segmentation
-- Built advanced lead scoring algorithms using quiz response data
-- Implemented automated customer segmentation based on quiz interactions
-- Developed predictive models for lead conversion probability assessment
-
-### Conversion Rate Enhancement
+- Integrated LLMs (OpenAI, Anthropic) into existing Marketing Funnel Software and new APIs (Django).
+- Implemented RAG for question answering over documents using embeddings and vector search databases.
 - Created AI-driven recommendation engines for quiz result personalization
-- Implemented dynamic content optimization for improved user engagement
-- Developed automated funnel optimization based on conversion analytics
+- Integrated Chatbot with memory and context to provide a more engaging and personalized experience.
+
 
 ## Impact
 

@@ -2,9 +2,9 @@
 title: "Proscai - AI-Enhanced ERP Solutions"
 shortDescription: "ERP solutions enhanced with AI for business automation and optimization"
 clientOrCompany: "Proscai"
-period: "2023-2024"
-displayYear: "2024"
-technologies: ["Python", "Machine Learning", "ERP Systems", "Business Intelligence", "Data Analytics", "Automation", "AI/ML"]
+period: "2025"
+displayYear: "2025"
+technologies: ["Python", "Anthropic", "ERP Systems", "Business Intelligence", "RAG", "Langgraph", "Langsmith"]
 imageUrls: []
 projectUrl: "https://www.proscai.com/"
 order: 4
@@ -13,24 +13,16 @@ draft: false
 
 ## Project Overview
 
-Proscai specializes in providing comprehensive ERP solutions for businesses. I worked with their team to integrate advanced AI and machine learning capabilities into their ERP platform, enhancing automation, sales processes, and business intelligence features.
+Proscai specializes in providing comprehensive ERP solutions for businesses. I worked with their team to integrate advanced Generative AI into their ERP platform, especially customer-facing business intelligence features and data analytics.
 
 ## Key Contributions
 
 ### AI-Enhanced ERP Platform
-- Integrated machine learning algorithms into existing ERP workflows
+- Integrated Generative AI into existing ERP workflows
 - Developed intelligent automation features for business processes
-- Created predictive analytics modules for business forecasting
+- Orchestrated a RAG-based and text-to-SQL query generation agent for business intelligence
 
-### Sales Process Optimization
-- Built AI-powered sales analytics and recommendation systems
-- Implemented automated lead scoring and customer segmentation
-- Developed intelligent pricing optimization algorithms
 
-### Business Intelligence Enhancement
-- Created advanced reporting and analytics dashboards
-- Implemented real-time business performance monitoring
-- Developed automated insights generation for business decision-making
 
 ## Impact
 
@@ -38,4 +30,4 @@ The AI-enhanced ERP solution provided Proscai's clients with improved operationa
 
 ## Technologies Used
 
-The project leveraged modern AI and machine learning technologies integrated seamlessly with traditional ERP systems, ensuring both powerful functionality and user-friendly interfaces for business users. 
+The project leveraged modern Generative AI and machine learning technologies integrated seamlessly with traditional ERP systems, ensuring both powerful functionality and user-friendly interfaces for business users. 

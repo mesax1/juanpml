@@ -4,7 +4,7 @@ shortDescription: "AI-enhanced social and influencer marketing analytics platfor
 clientOrCompany: "Intermate.de"
 period: "2023-2024"
 displayYear: "2024"
-technologies: ["Python", "Machine Learning", "Social Media Analytics", "Influencer Marketing", "Data Analytics", "Marketing Technology"]
+technologies: ["Python", "Machine Learning", "Hugging Face", "Langchain", "FastAPI", "CLIP", "AWS"]
 imageUrls: []
 projectUrl: "https://intermate.de/"
 order: 15
@@ -13,28 +13,18 @@ draft: false
 
 ## Project Overview
 
-Intermate.de is a full-service social and influencer marketing agency based in Germany. I worked with their team to develop AI-powered analytics and optimization tools for their social media and influencer marketing campaigns, enhancing their ability to deliver data-driven results for clients.
+Intermate.de is a full-service social and influencer marketing agency based in Germany. I worked with their team as an AI Engineer developing a Recommendation Engine for Content Creators based on text, image, and video search.
 
 ## Key Contributions
 
-### AI-Powered Influencer Analytics
-- Developed machine learning models for influencer performance prediction and analysis
+- Transformed the information of images and videos from content creators into embeddings to be used for similarity search and discovery.
+- Developed a Recommendation Engine for Content Creators based on text, image, and video search.
 - Implemented automated influencer discovery and matching algorithms
-- Created sentiment analysis tools for influencer content and audience engagement
 
-### Social Media Campaign Optimization
-- Built predictive models for social media campaign performance forecasting
-- Implemented automated content optimization recommendations
-- Developed real-time campaign monitoring and adjustment systems
-
-### Marketing Intelligence Platform
-- Created comprehensive analytics dashboards for campaign performance tracking
-- Implemented automated reporting systems for client deliverables
-- Developed competitive analysis tools for market positioning insights
 
 ## Impact
 
-The AI-enhanced marketing platform provided Intermate.de with superior campaign performance insights, improved influencer selection processes, and automated optimization capabilities. This resulted in better ROI for clients and more efficient campaign management workflows.
+The AI-enhanced marketing platform provided Intermate.de with superior content creators insights and improved influencer search and selection processes. This resulted in better matched content creators for clients and more efficient campaign management workflows.
 
 ## Technologies Used
 

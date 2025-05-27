@@ -1,7 +1,8 @@
 ---
 title: "AI-Enhanced Chatbot for Fantasy Football"
 clientOrCompany: "Rotobot.ai"
-displayYear: "2023-Present"
+period: "2023-2024"
+displayYear: "2024"
 shortDescription: "Developed an AI-powered expert for fantasy football questions, including developing a POC and MVP. It can find waiver wire pickups, analyze trades, help with sit/start decisions, suggest players, and compare players."
 technologies: ["Langchain", "Python - FastAPI", "OpenAI", "Qdrant", "PostgreSQL", "Azure"]
 roles: ["Main AI Engineer"]
