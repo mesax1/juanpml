@@ -11,12 +11,25 @@ draft: false
 order: 10
 ---
 
+### Project Overview
 Developed an AI-powered expert for fantasy football questions, including developing a POC and MVP. It can find waiver wire pickups, analyze trades, help with sit/start decisions, suggest players, and compare players.
 
-### Key Features:
-*   Waiver wire pickup suggestions
-*   Trade analysis
-*   Sit/start decision assistance
-*   Player comparisons
+### Key Contributions
+- Plan and orchestrate the way the AI would access the daily updated data and answer the questions.
+- Developed an AI-powered expert for fantasy football questions.
+- Developed a Proof of Concept (POC) and Minimum Viable Product (MVP).
+- Implemented features for waiver wire pickup suggestions.
+- Implemented features for trade analysis.
+- Implemented features for sit/start decision assistance.
+- Implemented features for player suggestions and comparisons.
 
-*(You can expand this section with much more detail about the project, challenges, solutions, architecture, etc. for its dedicated page)* 
+### Impact
+
+
+### Technologies Used
+- Langchain
+- Python - FastAPI
+- OpenAI
+- Qdrant
+- PostgreSQL
+- Azure 

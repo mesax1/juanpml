@@ -11,6 +11,25 @@ draft: false
 order: 9
 ---
 
+### Project Overview
 Applied AI engineering consultant focusing on improving complex structured outputs for LLM integration, setting and improving Evals, LLM integrations, agentic and tool calling workflows, complex structured outputs integration and evaluation, advanced RAG projects, and AI-assisted tender proposals.
 
-*(Expand with more details for the dedicated page)* 
+### Key Contributions
+- Improving complex structured outputs for LLM integration.
+- Setting and improving Evals.
+- LLM integrations.
+- Agentic and tool calling workflows.
+- Complex structured outputs integration and evaluation.
+- Advanced RAG projects.
+- AI-assisted tender proposals.
+
+### Impact
+
+
+### Technologies Used
+- Python
+- Machine Learning
+- Deep Learning
+- NLP
+- Computer Vision
+- MLOps 

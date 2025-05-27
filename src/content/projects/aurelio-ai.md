@@ -10,6 +10,16 @@ draft: false
 order: 11
 ---
 
+### Project Overview
 AI Engineer developing a Recommendation Engine for Content Creators based on text, image, and video search.
 
-*(Expand with more details for the dedicated page)* 
+### Key Contributions
+- Developing a Recommendation Engine for Content Creators based on text, image, and video search.
+
+### Impact
+
+
+### Technologies Used
+- Python
+- NLP
+- Machine Learning 

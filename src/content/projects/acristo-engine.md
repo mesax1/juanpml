@@ -11,6 +11,20 @@ draft: false
 order: 12
 ---
 
+### Project Overview
 Main AI Engineer for AcristoEngine.com, developing a Search Engine and AI Chatbot for real estate construction codes (county, state, and international codes), citing sources and linking to relevant code sections.
 
-*(Expand with more details for the dedicated page)* 
+### Key Contributions
+- Developing a Search Engine and AI Chatbot for real estate construction codes.
+- Ensuring the system cites sources and links to relevant code sections.
+
+### Impact
+
+
+### Technologies Used
+- Langchain
+- Python - FastAPI
+- OpenAI / Anthropic
+- Qdrant
+- PostgreSQL
+- Supabase 

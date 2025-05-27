@@ -10,6 +10,23 @@ draft: false
 order: 7
 ---
 
-Extensive experience in expanding vehicle routing algorithms' capabilities, converting prototypes for novel optimization algorithms into production-ready products, improving traffic/transit predictions, and developing data-driven metaheuristics for route sequencing and VRPs. Developed a VRP microservice for Coordinadora handling >15,000 packages daily.
+### Project Overview
+Extensive experience in expanding vehicle routing algorithms' capabilities, converting prototypes for novel optimization algorithms into production-ready products, improving traffic/transit predictions, and developing data-driven metaheuristics for route sequencing and VRPs.
 
-*(Expand with more details for the dedicated page)* 
+### Key Contributions
+- Developed a VRP microservice for Coordinadora.
+- Expanded vehicle routing algorithms' capabilities.
+- Converted prototypes for novel optimization algorithms into production-ready products.
+- Improved traffic/transit predictions.
+- Developed data-driven metaheuristics for route sequencing and VRPs.
+
+### Impact
+- The VRP microservice for Coordinadora handled >15,000 packages daily.
+
+### Technologies Used
+- Python
+- Django
+- Optimization Algorithms
+- OR-Tools
+- Mathematical Modeling
+- Meta-Heuristics
