@@ -8,7 +8,7 @@ roles: ["Main AI Engineer"]
 contraLink: "https://contra.com/p/vYkEZ6vW-ai-enhanced-chatbot-for-fantasy-football"
 imageUrls: [] # Example: ["/images/projects/rotobot-ai/image1.png"]
 draft: false
-order: 1 # Example order
+order: 10
 ---
 
 Developed an AI-powered expert for fantasy football questions, including developing a POC and MVP. It can find waiver wire pickups, analyze trades, help with sit/start decisions, suggest players, and compare players.

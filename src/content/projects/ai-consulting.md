@@ -8,7 +8,7 @@ roles: ["AI Consultant", "Technical Advisor"]
 contraLink: "https://contra.com/juanpml"
 imageUrls: []
 draft: false
-order: 3
+order: 9
 ---
 
 Applied AI engineering consultant focusing on improving complex structured outputs for LLM integration, setting and improving Evals, LLM integrations, agentic and tool calling workflows, complex structured outputs integration and evaluation, advanced RAG projects, and AI-assisted tender proposals.

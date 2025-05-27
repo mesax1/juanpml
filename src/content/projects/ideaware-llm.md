@@ -7,7 +7,7 @@ technologies: ["LLMs", "Python", "API Integration"]
 roles: ["LLM Engineer"]
 imageUrls: []
 draft: false
-order: 5
+order: 13
 ---
 
 Integrated LLMs (OpenAI, Anthropic) into existing Marketing Funnel Software and new APIs (Django). Implemented RAG for question answering over documents using embeddings and vector search databases.

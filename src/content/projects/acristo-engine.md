@@ -8,7 +8,7 @@ roles: ["Main AI Engineer"]
 contraLink: "https://contra.com/p/3ROAUZBX-ai-chatbot-for-real-estate-construction-codes-information"
 imageUrls: []
 draft: false
-order: 2
+order: 12
 ---
 
 Main AI Engineer for AcristoEngine.com, developing a Search Engine and AI Chatbot for real estate construction codes (county, state, and international codes), citing sources and linking to relevant code sections.
