@@ -47,18 +47,13 @@ const projectLink = `/projects/${id}`;
         <h3 class="text-xl lg:text-2xl font-bold text-accent-base mb-3 group-hover:text-accent-one transition-colors line-clamp-2">
           {title}
         </h3>
-        {clientOrCompany && (
-          <p class="text-sm lg:text-base text-light mb-2">
-            <span class="font-medium">Client:</span> {clientOrCompany}
-          </p>
-        )}
         <p class="text-sm lg:text-base text-lighter">
           <span class="font-medium">Year:</span> {displayYear}
         </p>
       </div>
 
       <!-- Description -->
-      <p class="text-base lg:text-lg text-textColor leading-relaxed mb-4 lg:mb-6 line-clamp-3">
+      <p class="text-base lg:text-lg text-textColor leading-relaxed mb-4 lg:mb-6 line-clamp-5">
         {shortDescription}
       </p>
 
