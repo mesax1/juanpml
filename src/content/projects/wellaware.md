@@ -5,7 +5,7 @@ clientOrCompany: "WellAware"
 period: "2024-2025"
 displayYear: "2025"
 technologies: ["Python", "Data Analytics", "IoT", "Machine Learning", "Time Series Analysis", "Industrial Automation", "Oil & Gas"]
-imageUrls: []
+imageUrls: ["/images/screenshot01.png", "/images/screenshot02.png", "/images/screenshot03.png"]
 projectUrl: "https://wellaware.us/"
 order: 1
 draft: false

@@ -3,7 +3,7 @@ title: "Bucket.io - AI-Powered Quiz Funnel Optimization"
 shortDescription: "AI-enhanced quiz funnels for lead growth and business revenue optimization"
 clientOrCompany: "Bucket.io"
 period: "2023-2024"
-displayYear: "2024"
+displayYear: "2023"
 technologies: ["Python", "Machine Learning", "Conversion Optimization", "A/B Testing", "Marketing Analytics", "Lead Generation"]
 imageUrls: []
 projectUrl: "https://bucket.io/"

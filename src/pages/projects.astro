@@ -29,91 +29,47 @@ const sortedProjects = allProjects.sort((a, b) => {
 ---
 
 <Base meta={meta}>
-  <style>
-    .projects-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); /* Slightly wider minimum */
-      gap: 2rem; /* Spacing between cards */
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      align-items: stretch; /* Ensure all cards stretch to same height */
-    }
-    .page-header {
-      text-align: center;
-      margin-bottom: 2rem;
-      padding-top: 2rem;
-    }
-    .page-header h1 {
-      font-size: 2.5rem; /* Tailwind's text-4xl */
-      font-weight: 700; /* Tailwind's font-bold */
-      margin-bottom: 0.5rem;
-      color: #1a202c;
-    }
-    .page-header p {
-      font-size: 1.125rem; /* Tailwind's text-lg */
-      color: #4a5568; /* Tailwind's gray-700 */
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.6;
-    }
-    
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .projects-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
-        gap: 1.5rem;
-        padding-top: 1.5rem;
-      }
-      .page-header {
-        padding-top: 1.5rem;
-        margin-bottom: 1.5rem;
-      }
-      .page-header h1 {
-        font-size: 2rem; /* Smaller on mobile */
-      }
-    }
-    
-    @media (min-width: 769px) and (max-width: 1024px) {
-      .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
-      }
-    }
-    
-    @media (min-width: 1025px) {
-      .projects-grid {
-        grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
-      }
-    }
-  </style>
-  
-  <div class="projects-container">
-    <div class="page-header">
-      <h1>{meta.title}</h1>
-      <p>{meta.description}</p>
-    </div>
-    <div class="projects-grid">
-      {sortedProjects.map(project => (
-        <ProjectCard project={project} />
-      ))}
-    </div>
-    
-    <!-- Main CTA -->
-    <div class="flex justify-center my-8 lg:my-12">
-      <a 
-        href="https://calendar.app.google/VALDzjK7GqCTvYz56" 
-        target="_blank" 
-        rel="noopener" 
-        class="inline-flex items-center justify-center h-12 sm:h-14 px-6 sm:px-8 rounded-lg shadow-xl hover:brightness-110 transition-all bg-gradient-to-r from-accent-one to-accent-two text-bgColor font-semibold text-base sm:text-lg"
-        aria-label="Schedule your AI consultation appointment"
-      >
-        Schedule Your AI Consultation
-      </a>
+  <!-- Override the base layout width constraints for projects page -->
+  <div class="w-full max-w-none">
+    <div class="mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-24" style="max-width: min(95vw, 1600px);">
+      <!-- Hero Section -->
+      <header class="text-center mb-16 bg-gradient-to-br from-accent-one/10 to-accent-two/10 rounded-2xl p-8 md:p-12 lg:p-16">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-accent-one to-accent-two bg-clip-text text-transparent">
+          {meta.title}
+        </h1>
+        <p class="text-lg md:text-xl lg:text-2xl text-light max-w-4xl mx-auto leading-relaxed">
+          Explore some of the AI projects I've delivered for clients across various industries. 
+          Each project showcases innovative solutions that drive real business value through intelligent automation and data analytics.
+        </p>
+      </header>
+
+      <!-- Projects Grid -->
+      <section class="mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-8 lg:gap-10 xl:gap-12">
+          {sortedProjects.map(project => (
+            <ProjectCard project={project} />
+          ))}
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="text-center bg-gradient-to-br from-accent-one/10 to-accent-two/10 rounded-2xl p-8 md:p-12 lg:p-16">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-accent-base">
+          Ready to Start Your Next AI Project?
+        </h2>
+        <p class="text-lg md:text-xl lg:text-2xl text-light mb-8 max-w-3xl mx-auto leading-relaxed">
+          Let's discuss how I can help transform your business with intelligent, scalable AI solutions tailored to your specific needs.
+        </p>
+        <a 
+          href="https://calendar.app.google/VALDzjK7GqCTvYz56" 
+          target="_blank" 
+          rel="noopener" 
+          class="inline-flex items-center justify-center h-14 lg:h-16 px-8 lg:px-12 rounded-lg shadow-xl hover:brightness-110 transition-all bg-gradient-to-r from-accent-one to-accent-two text-bgColor font-semibold text-lg lg:text-xl"
+          aria-label="Schedule your AI consultation appointment"
+        >
+          Schedule Your AI Consultation
+        </a>
+      </section>
     </div>
   </div>
 </Base> 

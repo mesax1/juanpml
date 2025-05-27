@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import type { SiteMeta } from '@/types';
 import type { CollectionEntry } from 'astro:content';
@@ -19,6 +19,7 @@ interface Props {
 }
 
 const { project } = Astro.props;
+const { Content } = await render(project);
 
 const meta: SiteMeta = {
   title: project.data.title,
@@ -29,148 +30,105 @@ const meta: SiteMeta = {
 ---
 
 <Base meta={meta}>
-  <style>
-    .project-detail-container {
-      padding: 2rem 0;
-    }
-    .project-header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .project-header h1 {
-      font-size: 2.5rem; /* text-4xl */
-      font-weight: 700; /* font-bold */
-      margin-bottom: 0.5rem;
-    }
-    .project-header .company {
-      font-size: 1.125rem; /* text-lg */
-      color: #718096; /* gray-600 */
-      margin-bottom: 0.25rem;
-    }
-    .project-header .year {
-      font-size: 1rem; /* text-base */
-      color: #a0aec0; /* gray-500 */
-      margin-bottom: 1.5rem;
-    }
-    .project-images {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    .project-images img {
-      width: 100%;
-      height: auto;
-      border-radius: 0.375rem; /* rounded-md */
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); /* shadow-md */
-    }
-    .project-content {
-      line-height: 1.7;
-      font-size: 1.125rem; /* text-lg */
-    }
-    .project-content h2 {
-      font-size: 1.875rem; /* text-2xl */
-      font-weight: 600; /* font-semibold */
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #e2e8f0; /* gray-300 */
-      padding-bottom: 0.5rem;
-    }
-    .project-content h3 {
-      font-size: 1.5rem; /* text-xl */
-      font-weight: 600; /* font-semibold */
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-    }
-    .project-content p {
-      margin-bottom: 1rem;
-    }
-    .project-content ul {
-      list-style: disc;
-      margin-left: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    .project-content li {
-      margin-bottom: 0.5rem;
-    }
-    .project-links {
-      margin-top: 2rem;
-      padding-top: 1rem;
-      border-top: 1px solid #e2e8f0; /* gray-300 */
-    }
-    .project-links a {
-      display: inline-block;
-      margin-right: 1rem;
-      color: #2b6cb0; /* blue-600 */
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border: 1px solid #2b6cb0; /* blue-600 */
-      border-radius: 0.375rem; /* rounded-md */
-      transition: background-color 0.2s, color 0.2s;
-    }
-    .project-links a:hover {
-      background-color: #2b6cb0; /* blue-600 */
-      color: white;
-    }
-    .tech-tags {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    .tech-tag {
-      display: inline-block;
-      background-color: #edf2f7; /* gray-200 */
-      color: #4a5568; /* gray-700 */
-      padding: 0.25rem 0.75rem;
-      border-radius: 9999px; /* rounded-full */
-      font-size: 0.875rem; /* text-sm */
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-  </style>
-
-  <article class="project-detail-container">
-    <header class="project-header">
-      <h1>{project.data.title}</h1>
-      {project.data.clientOrCompany && <p class="company">Client/Company: {project.data.clientOrCompany}</p>}
-      <p class="year">Year: {project.data.displayYear}</p>
+  <article class="max-w-4xl mx-auto">
+    <!-- Hero Section -->
+    <header class="text-center mb-12 bg-gradient-to-br from-accent-one/10 to-accent-two/10 rounded-2xl p-8 md:p-12">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-accent-one to-accent-two bg-clip-text text-transparent">
+        {project.data.title}
+      </h1>
+      {project.data.clientOrCompany && (
+        <p class="text-lg md:text-xl text-light mb-2">
+          <span class="font-medium">Client:</span> {project.data.clientOrCompany}
+        </p>
+      )}
+      <p class="text-base md:text-lg text-lighter mb-6">
+        <span class="font-medium">Year:</span> {project.data.displayYear}
+      </p>
+      <p class="text-lg md:text-xl text-textColor max-w-3xl mx-auto leading-relaxed">
+        {project.data.shortDescription}
+      </p>
     </header>
 
-    {project.data.imageUrls && project.data.imageUrls.length > 0 && (
-      <section class="project-images">
-        {project.data.imageUrls.map(imageUrl => (
-          <img src={imageUrl} alt={project.data.title + " image"} />
+    <!-- Technologies Section -->
+    {project.data.technologies && project.data.technologies.length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold mb-6 text-accent-base">Technologies Used</h2>
+        <div class="flex flex-wrap gap-3">
+          {project.data.technologies.map(tech => (
+            <span class="px-4 py-2 bg-gradient-to-r from-accent-one/20 to-accent-two/20 text-accent-base rounded-full text-sm font-medium border border-accent-one/30 hover:border-accent-one/50 transition-colors">
+              {tech}
+            </span>
         ))}
+        </div>
       </section>
     )}
 
-    <section class="project-content prose prose-lg max-w-none dark:prose-invert">
-      <div set:html={project.body} />
-    </section>
-
-    {project.data.technologies && project.data.technologies.length > 0 && (
-      <section class="tech-tags">
-        <strong>Technologies Used:</strong>
-        <div>
-          {project.data.technologies.map(tech => (
-            <span class="tech-tag">{tech}</span>
+    <!-- Project Images -->
+    {project.data.imageUrls && project.data.imageUrls.length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold mb-6 text-accent-base">Project Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {project.data.imageUrls.map((imageUrl, index) => (
+            <div class="group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <img 
+                src={imageUrl} 
+                alt={`${project.data.title} screenshot ${index + 1}`}
+                class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
           ))}
         </div>
       </section>
     )}
 
-    <nav class="project-links">
-      {project.data.contraLink && <a href={project.data.contraLink} target="_blank" rel="noopener noreferrer">View on Contra</a>}
-      {project.data.projectUrl && <a href={project.data.projectUrl} target="_blank" rel="noopener noreferrer">View Project Site</a>}
-      <a href="/projects">Back to All Projects</a>
+    <!-- Main Content -->
+    <section class="prose prose-lg prose-citrus max-w-none mb-12 prose-headings:font-semibold prose-headings:text-accent-base prose-headings:before:text-accent-two">
+      <Content />
+    </section>
+
+    <!-- Action Links -->
+    <nav class="flex flex-wrap gap-4 justify-center mb-12 p-6 bg-special-lighter/50 rounded-xl">
+      {project.data.projectUrl && (
+        <a 
+          href={project.data.projectUrl} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-accent-one to-accent-two text-bgColor font-semibold rounded-lg shadow-lg hover:shadow-xl hover:brightness-110 transition-all"
+        >
+          View Clients Website →
+        </a>
+      )}
+      {project.data.contraLink && (
+        <a 
+          href={project.data.contraLink} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-6 py-3 border-2 border-accent-one text-accent-one font-semibold rounded-lg hover:bg-accent-one hover:text-bgColor transition-all"
+        >
+          View on Contra
+        </a>
+      )}
+      <a 
+        href="/projects"
+        class="inline-flex items-center justify-center px-6 py-3 bg-special-light text-textColor font-semibold rounded-lg hover:bg-special-lighter transition-all"
+      >
+        ← Back to Projects
+      </a>
     </nav>
     
     <!-- Main CTA -->
-    <div class="flex justify-center my-8 lg:my-12">
+    <div class="text-center bg-gradient-to-br from-accent-one/10 to-accent-two/10 rounded-2xl p-8 md:p-12">
+      <h3 class="text-2xl md:text-3xl font-bold mb-4 text-accent-base">
+        Ready to Start Your AI Project?
+      </h3>
+      <p class="text-lg text-light mb-8 max-w-2xl mx-auto">
+        Let's discuss how I can help transform your business with intelligent, scalable AI solutions like this one.
+      </p>
       <a 
         href="https://calendar.app.google/VALDzjK7GqCTvYz56" 
         target="_blank" 
         rel="noopener" 
-        class="inline-flex items-center justify-center h-12 sm:h-14 px-6 sm:px-8 rounded-lg shadow-xl hover:brightness-110 transition-all bg-gradient-to-r from-accent-one to-accent-two text-bgColor font-semibold text-base sm:text-lg"
+        class="inline-flex items-center justify-center h-14 px-8 rounded-lg shadow-xl hover:brightness-110 transition-all bg-gradient-to-r from-accent-one to-accent-two text-bgColor font-semibold text-lg"
         aria-label="Schedule your AI consultation appointment"
       >
         Schedule Your AI Consultation
@@ -178,3 +136,44 @@ const meta: SiteMeta = {
     </div>
   </article>
 </Base> 
+
+<!-- Copy code button script (same as BlogPost.astro) -->
+<script>
+	// Wait for the content to fully load
+	document.addEventListener("DOMContentLoaded", () => {
+		// Find all pre blocks
+		document.querySelectorAll("pre").forEach((pre) => {
+			// Check if the button already exists
+			if (!pre.querySelector(".copy-code")) {
+				// Create the button
+				const copyButton = document.createElement("button");
+				copyButton.className =
+				"absolute flex items-center justify-center bg-bgColor h-6 font-medium overflow-hidden rounded-md text-light hover:text-accent-two font-sans text-sm font-medium top-2 right-2";
+
+				// Create the span element that will hold the button text
+				const buttonText = document.createElement("span");
+				buttonText.innerText = "Copy"; // Initial text
+				buttonText.className = "flex items-center block w-full h-full px-2 bg-[var(--code-title-bg)]"; // Set the span to take up full width with background color
+
+				copyButton.appendChild(buttonText); // Append span to the button
+
+				// Add the button inside pre
+				pre.appendChild(copyButton);
+
+				// Event handler for copying text
+				copyButton.addEventListener("click", async () => {
+					const code = pre.querySelector("code")?.textContent;
+					if (code) {
+						await navigator.clipboard.writeText(code);
+						buttonText.innerText = "Copied!"; // Change text to "Copied!"
+
+						// After 1.5 seconds, change the text back to "Copy"
+						setTimeout(() => {
+							buttonText.innerText = "Copy";
+						}, 1500);
+					}
+				});
+			}
+		});
+	});
+</script> 

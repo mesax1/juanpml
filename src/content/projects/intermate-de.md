@@ -3,7 +3,7 @@ title: "Intermate.de - AI-Driven Marketing Analytics"
 shortDescription: "AI-enhanced social and influencer marketing analytics platform for German market"
 clientOrCompany: "Intermate.de"
 period: "2023-2024"
-displayYear: "2024"
+displayYear: "2023"
 technologies: ["Python", "Machine Learning", "Hugging Face", "Langchain", "FastAPI", "CLIP", "AWS"]
 imageUrls: []
 projectUrl: "https://intermate.de/"
