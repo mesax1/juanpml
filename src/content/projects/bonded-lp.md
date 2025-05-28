@@ -4,7 +4,7 @@ shortDescription: "AI-enhanced design, installation, inspection, and certificati
 clientOrCompany: "Bonded LP"
 period: "2024"
 displayYear: "2024"
-technologies: ["Python", "RAG", "LLMs", "VLLMs", "ColPALI", "Vespa"]
+technologies: ["ColPALI", "Vespa", "RAG", "LLMs", "VLLMs"]
 imageUrls: []
 projectUrl: "https://www.bondedlp.com/"
 order: 5
@@ -24,8 +24,4 @@ Bonded LP specializes in the design, installation, inspection, and certification
 
 ## Impact
 
-Each project documents processed with the AI-powered document processing can save 1-2 days of fulltime employee work.
-
-## Technologies Used
-
-The project combined advanced RAG with ColPALI, LLMs, and VLLMs to create a system that can inspect documents and accelerate the construction planning phase.
+Each project's documents processed with the AI-powered document processing system can save 1-2 days of fulltime employee work.

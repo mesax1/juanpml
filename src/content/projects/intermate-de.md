@@ -25,7 +25,3 @@ Intermate.de is a full-service social and influencer marketing agency based in G
 ## Impact
 
 The AI-enhanced marketing platform provided Intermate.de with superior content creators insights and improved influencer search and selection processes. This resulted in better matched content creators for clients and more efficient campaign management workflows.
-
-## Technologies Used
-
-The project utilized advanced machine learning and data analytics technologies specifically tailored for social media and influencer marketing applications, ensuring accurate performance prediction and optimization in the dynamic German marketing landscape. 

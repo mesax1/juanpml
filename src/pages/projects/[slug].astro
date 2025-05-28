@@ -69,11 +69,11 @@ const meta: SiteMeta = {
         <h2 class="text-2xl font-semibold mb-6 text-accent-base">Project Gallery</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {project.data.imageUrls.map((imageUrl, index) => (
-            <div class="group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div class="group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800">
               <img 
                 src={imageUrl} 
                 alt={`${project.data.title} screenshot ${index + 1}`}
-                class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                class="w-full h-auto max-h-80 object-contain group-hover:scale-105 transition-transform duration-300 p-4"
               />
             </div>
           ))}

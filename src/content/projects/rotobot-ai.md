@@ -4,9 +4,10 @@ clientOrCompany: "Rotobot.ai"
 period: "2023-2024"
 displayYear: "2024"
 shortDescription: "Developed an AI-powered expert for fantasy football questions, including developing a POC and MVP. It can find waiver wire pickups, analyze trades, help with sit/start decisions, suggest players, and compare players."
-technologies: ["Langchain", "Python - FastAPI", "OpenAI", "Qdrant", "PostgreSQL", "Azure"]
+technologies: ["Langchain", "FastAPI", "OpenAI", "Qdrant", "PostgreSQL", "Azure"]
 roles: ["Main AI Engineer"]
 contraLink: "https://contra.com/p/vYkEZ6vW-ai-enhanced-chatbot-for-fantasy-football"
+projectUrl: "https://rotobot.ai/"
 imageUrls: [] # Example: ["/images/projects/rotobot-ai/image1.png"]
 draft: false
 order: 10
@@ -26,11 +27,6 @@ Developed an AI-powered expert for fantasy football questions, including develop
 
 ### Impact
 
+The POC and MVP were used to pitch the product to potential clients and investors. 
+The AI-powered expert has been used to answer questions from hundreds of users and help them make better decisions on their fantasy football teams.
 
-### Technologies Used
-- Langchain
-- Python - FastAPI
-- OpenAI
-- Qdrant
-- PostgreSQL
-- Azure 

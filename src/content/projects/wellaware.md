@@ -36,7 +36,3 @@ WellAware specializes in industrial automation and data analytics solutions, pri
 ## Impact
 
 The predictive and reactive maintenance solution and enhanced analytics platform provided WellAware's clients with significant improvements in operational efficiency. This was achieved through reduced equipment downtime, optimized maintenance schedules, and more informed decision-making capabilities driven by advanced data insights. The solutions contributed to optimizing systems operations while also helping to reduce operational costs.
-
-## Technologies Used
-
-The project utilized a range of data science and machine learning technologies, including Python, Pandas, and Scikit-learn, deployed on AWS SageMaker. MLFlow and Metaflow were used for MLOps. The system was specifically designed for industrial IoT applications, ensuring robust performance in demanding oil and gas environments. 

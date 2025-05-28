@@ -4,7 +4,7 @@ shortDescription: "Enhanced data science tools, MLOps, and data & model manageme
 clientOrCompany: "Anaconda Org"
 period: "2024-2025"
 displayYear: "2025"
-technologies: ["Python", "MLOps", "Data Science", "Model Management", "Kubernetes", "Docker", "Machine Learning", "Data Engineering"]
+technologies: ["RAG", "LLMs", "Kubernetes", "Milvus", "PostgreSQL", "Phoenix - Arize"]
 imageUrls: []
 projectUrl: "https://anaconda.org/"
 order: 2
@@ -25,7 +25,3 @@ Anaconda Org is a leading platform that provides comprehensive data science tool
 ## Impact
 
 The enhanced HR processes provided Anaconda Org with improved productivity, better employee support, and more efficient internal communication. The solutions helped organizations scale their operations more effectively.
-
-## Technologies Used
-
-The project utilized cutting-edge Generative AI, Search (RAG), and LLM technologies and best practices, ensuring robust, scalable, and maintainable machine learning infrastructure for enterprise-level operations. 

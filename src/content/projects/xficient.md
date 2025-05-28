@@ -4,7 +4,7 @@ shortDescription: "AI Consultation to determine the performance of their LLM-bas
 clientOrCompany: "Xficient"
 period: "2025"
 displayYear: "2025"
-technologies: ["Python", "LLMs", "Langgraph", "Langsmith", "PostgreSQL", "OCR"]
+technologies: ["LLMs", "Langgraph", "Langsmith", "PostgreSQL", "OCR"]
 imageUrls: []
 projectUrl: "https://xficient.com/"
 order: 3
@@ -45,7 +45,3 @@ Xficient's main product is a document processing system that uses LLMs to proces
 ## Impact
 
 Through systematic evaluation and optimization, the consulting engagement resulted in measurable improvements to the document processing system's reliability and accuracy. The evaluation framework enabled the team to make data-driven decisions about system improvements, identifying specific failure points and implementing targeted solutions. The systematic approach to reliability improvement established a foundation for ongoing optimization and quality assurance.
-
-## Technologies Used
-
-The consulting project utilized Python for evaluation system development, LangGraph for AI workflow orchestration, LangSmith for monitoring and observability, PostgreSQL for data management, and various LLM technologies for document processing. The technical stack was specifically chosen to enable systematic measurement, experimentation, and improvement of the AI system's performance in healthcare document processing applications. 

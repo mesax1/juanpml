@@ -3,11 +3,11 @@ title: "12Tren - AI-Enhanced Transportation Solutions"
 shortDescription: "AI and machine learning solutions for transportation and logistics optimization"
 clientOrCompany: "12Tren"
 period: "2023-2024"
-displayYear: "2024"
+displayYear: "2023"
 technologies: ["Python", "Machine Learning", "Transportation Analytics", "Route Optimization", "Predictive Analytics", "Logistics"]
 imageUrls: []
 projectUrl: "https://12tren.com/"
-order: 18
+order: 19
 draft: false
 ---
 
@@ -35,7 +35,3 @@ draft: false
 ## Impact
 
 The AI-enhanced transportation solutions significantly improved operational efficiency, reduced costs, and enhanced customer satisfaction through better route planning and demand management. The predictive capabilities enabled proactive decision-making and resource optimization.
-
-## Technologies Used
-
-The project leveraged advanced machine learning and optimization algorithms specifically designed for transportation and logistics applications, ensuring efficient and reliable mobility solutions. 

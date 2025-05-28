@@ -3,7 +3,7 @@ title: "AI Chatbot for Real Estate Construction Codes"
 clientOrCompany: "AcristoEngine.com"
 displayYear: "2024"
 shortDescription: "Main AI Engineer for AcristoEngine.com, developing a Search Engine and AI Chatbot for real estate construction codes (county, state, and international codes), citing sources and linking to relevant code sections."
-technologies: ["Langchain", "Python", "FastAPI", "OpenAI", "Qdrant", "PostgreSQL"]
+technologies: ["Langchain", "FastAPI", "OpenAI", "Qdrant", "PostgreSQL"]
 roles: ["Main AI Engineer"]
 contraLink: "https://contra.com/p/3ROAUZBX-ai-chatbot-for-real-estate-construction-codes-information"
 imageUrls: []
@@ -20,10 +20,4 @@ Main AI Engineer for AcristoEngine.com, developing a Search Engine and AI Chatbo
 
 ### Impact
 
-
-### Technologies Used
-- Langchain
-- Python - FastAPI
-- OpenAI / Anthropic
-- Qdrant
-- PostgreSQL
+The AI-powered search engine and chatbot has been used by hundreds of users to find construction codes and related information in a fast and efficient way, without spending hours searching through the county, state, and international code books.

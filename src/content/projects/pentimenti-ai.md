@@ -4,7 +4,7 @@ shortDescription: "AI solutions to simplify and streamline the sales and tender 
 clientOrCompany: "Pentimenti.ai"
 period: "2023-2024"
 displayYear: "2024"
-technologies: ["Python", "Natural Language Processing", "Machine Learning", "Document Processing", "Sales Automation", "AI/ML"]
+technologies: ["Python", "Natural Language Processing", "OCR", "Document Processing", "Sales Automation", "AI/ML"]
 imageUrls: []
 projectUrl: "https://pentimenti.ai/"
 order: 14
@@ -30,7 +30,3 @@ Pentimenti.ai is a specialized platform that develops AI solutions to simplify a
 ## Impact
 
 The AI-enhanced sales and tender platform significantly reduced the time and effort required for proposal preparation while improving success rates. The automated analysis and generation capabilities allowed sales teams to focus on strategy and relationship building rather than manual document processing.
-
-## Technologies Used
-
-The project leveraged advanced natural language processing and machine learning technologies specifically designed for sales and procurement processes, ensuring accurate document analysis and high-quality proposal generation. 

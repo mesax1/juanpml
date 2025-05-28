@@ -4,7 +4,7 @@ shortDescription: "AI-enhanced quiz funnels for lead growth and business revenue
 clientOrCompany: "Bucket.io"
 period: "2023-2024"
 displayYear: "2023"
-technologies: ["Python", "Machine Learning", "Conversion Optimization", "A/B Testing", "Marketing Analytics", "Lead Generation"]
+technologies: ["LLMs", "Django", "OpenAI", "Langchain", "RAG", "Qdrant"]
 imageUrls: []
 projectUrl: "https://bucket.io/"
 order: 16
@@ -27,6 +27,4 @@ Bucket.io is a comprehensive marketing technology platform that helps businesses
 
 The AI-enhanced quiz funnel platform significantly improved lead quality and conversion rates for Bucket.io's clients. The intelligent optimization features resulted in higher engagement rates, better lead qualification, and increased revenue generation through more effective marketing funnels.
 
-## Technologies Used
-
-The project leveraged advanced machine learning and marketing analytics technologies specifically designed for conversion optimization and lead generation, ensuring maximum effectiveness in quiz-based marketing campaigns. 
+The funnel creation pipeline for each client reduced from 1-2 weeks of work to just 1 day.
