@@ -5,7 +5,7 @@ clientOrCompany: "Xficient"
 period: "2025"
 displayYear: "2025"
 technologies: ["LLMs", "Langgraph", "Langsmith", "PostgreSQL", "OCR"]
-imageUrls: []
+imageUrls: [/projects/xficient/xficient_logo.webp]
 projectUrl: "https://xficient.com/"
 order: 3
 draft: false

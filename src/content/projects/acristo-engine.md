@@ -6,7 +6,7 @@ shortDescription: "Main AI Engineer for AcristoEngine.com, developing a Search E
 technologies: ["Langchain", "FastAPI", "OpenAI", "Qdrant", "PostgreSQL"]
 roles: ["Main AI Engineer"]
 contraLink: "https://contra.com/p/3ROAUZBX-ai-chatbot-for-real-estate-construction-codes-information"
-imageUrls: []
+imageUrls: ["/projects/acristoengine/acristo-chatbot.png", "/projects/acristoengine/Captura de pantalla 2024-07-10 235757.png", "/projects/acristoengine/Captura de pantalla 2024-07-10 235650.png"]
 draft: false
 order: 12
 ---

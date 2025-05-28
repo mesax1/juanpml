@@ -1,6 +1,6 @@
 ---
-title: "Anaconda Org - MLOps Platform Enhancement"
-shortDescription: "Enhanced data science tools, MLOps, and data & model management platform"
+title: "Anaconda Org - HR Internal Chatbot"
+shortDescription: "Developed a specialized AI chatbot assistant for the HR department to answer common questions and provide support."
 clientOrCompany: "Anaconda Org"
 period: "2024-2025"
 displayYear: "2025"
