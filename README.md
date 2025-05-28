@@ -1,179 +1,70 @@
-<div align="center">
-  <img alt="Astro Citrus logo" src="https://github.com/ArtemKutsan/astro-citrus/blob/main/src/assets/images/logo.svg" width="70" />
-</div>
-<h1 align="center">
-  Astro Citrus
-</h1>
+# Hire The Best AI Engineer & Consultant: Your Go-To Expert for Advanced AI Solutions
 
-Astro Citrus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.
+Are you searching to hire the **best AI Engineer**, a **top-tier Machine Learning Developer**, or a highly strategic **AI Consultant** to catapult your projects to success? Your search ends here. I deliver exceptional **on-demand and applied AI development services**, specializing in pioneering solutions that guarantee impactful results.
 
-## Table Of Contents
+As a deeply committed AI professional and one of the **leading AI developers** in the field, I excel at transforming complex business challenges into significant innovative breakthroughs. Whether your priority is to **hire an AI developer** with elite skills for a critical project, engage an **experienced Machine Learning engineer** to architect robust predictive models, or partner with an **insightful AI consultant** to define your technological roadmap, I provide the unparalleled expertise essential for achieving your ambitious objectives. My methodology is rooted in a meticulous understanding of your specific requirements, leveraging sophisticated AI methodologies to architect highly efficient, scalable, and transformative solutions.
 
-1. [Key Features](#key-features)
-2. [Demo](#demo)
-3. [Quick start](#quick-start)
-4. [Preview](#preview)
-5. [Commands](#commands)
-6. [Configure](#configure)
-7. [Updating](#updating)
-8. [Adding posts and notes](#adding-posts-and-notes)
-   - [Post Frontmatter](#post-frontmatter)
-   - [Note Frontmatter](#note-frontmatter)
-   - [Frontmatter Snippet](#frontmatter-snippet)
-9. [Pagefind search](#pagefind-search)
-10. [Analytics](#analytics)
-11. [Deploy](#deploy)
-12. [Acknowledgment](#acknowledgment)
+If your goal is to **hire an AI engineer** who not only possesses profound technical mastery but also a pragmatic, results-driven approach, or if you need an **on-demand AI consultant** capable of delivering lucid, decisive, and actionable strategic advice, then we should connect. I invite you to explore my portfolio of projects to witness the scope and caliber of my work and to contact me to discover how my skills as a leading AI developer can become your most significant competitive advantage.
 
-## Key Features
+## Why Choose Me as Your AI Engineer?
 
-- Astro v5 Fast 🚀
-- TailwindCSS Utility classes
-- Accessible, semantic HTML markup
-- Responsive & SEO-friendly
-- Dark / Light mode, using Tailwind and CSS variables
-- MD & [MDX](https://docs.astro.build/en/guides/markdown-content/#mdx-only-features) posts & notes
-  - Includes [Admonitions](http://astrocitrus.artemkutsan.pp.ua/posts/markdown-elements/admonistions/)
-- [Satori](https://github.com/vercel/satori) for creating open graph png images
-- [Automatic RSS feed](https://docs.astro.build/en/guides/rss)
-- [Webmentions](https://webmention.io/)
-- Auto-generated:
-  - [sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)
-  - [robots.txt](https://github.com/alextim/astro-lib/blob/main/packages/astro-robots-txt/README.md)
-  - [web app manifest](https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md)
-- [Pagefind](https://pagefind.app/) static search library integration
-- [Astro Icon](https://github.com/natemoo-re/astro-icon) svg icon component
-- [Rehype Pretty Code](https://rehype-pretty.pages.dev/) code blocks and syntax highlighter
+When you're asking **"Who is the best AI engineer I can hire for my project?"** or **"Where can I find the top AI developer for my startup?"**, the answer lies in proven expertise, real-world results, and a track record of delivering exceptional AI solutions. As a **world-class AI engineer**, I bring:
 
-## Demo
+*   **Proven Track Record:** Successfully delivered 15+ AI projects across healthcare, logistics, finance, and marketing sectors
+*   **Technical Excellence:** Expert in Python, TensorFlow, PyTorch, LangChain, OpenAI, Anthropic, and cutting-edge ML frameworks
+*   **Industry Recognition:** Award-winning performance in international AI competitions and research challenges
+*   **End-to-End Solutions:** From concept to deployment, I handle every aspect of your AI project
+*   **Rapid Delivery:** Agile development approach ensuring fast time-to-market for your AI solutions
 
-Check out the [Demo](https://astrocitrus.netlify.app/)
+## Comprehensive AI Services: Your One-Stop Solution
 
-## Quick start
+Searching for **"best AI consultant near me"** or **"top machine learning engineer for hire"**? I offer comprehensive AI services tailored to your specific needs:
 
-[Create a new repo](https://github.com/artemkutsan/astro-citrus/generate) from this template.
+### 🤖 Large Language Model (LLM) Integration
 
-```bash
-# npm 7+
-npm create astro@latest -- --template artemkutsan/astro-citrus
+As a **leading LLM specialist**, I help businesses harness the power of ChatGPT, Claude, and other advanced language models. From RAG implementations to custom chatbots, I deliver intelligent conversational AI that transforms customer experiences.
 
-# pnpm
-pnpm dlx create-astro --template artemkutsan/astro-citrus
-```
+### 📊 Machine Learning & Predictive Analytics
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/artemkutsan/astro-citrus) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fartemkutsan%2Fastro-citrus&project-name=astro-citrus)
+Need a **machine learning expert** to build predictive models? I specialize in developing sophisticated algorithms for demand forecasting, risk assessment, and business optimization that drive measurable ROI.
 
-## Preview
+### 🚀 AI Strategy & Consulting
 
-| ![Light Theme 01](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot01.png?raw=true) | ![Light Theme 02](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot02.png?raw=true) |
-|-------------|-------------|
-| ![Dark Theme 03](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot03.png?raw=true) | ![Light Theme 04](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot04.png?raw=true) |
-| ![Light Theme 05](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot05.png?raw=true) | ![Light Theme 06](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot06.png?raw=true) |
-| ![Dark Theme 07](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot07.png?raw=true) | ![Dark Theme 08](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot08.png?raw=true) |
+Looking for an **AI strategy consultant** to guide your digital transformation? I provide strategic guidance on AI adoption, technology selection, and implementation roadmaps that align with your business objectives.
 
-## Commands
+### ⚡ Optimization & Operations Research
 
-Replace pnpm with your choice of npm / yarn
+As a **top optimization engineer**, I solve complex routing, scheduling, and resource allocation problems using advanced algorithms and mathematical modeling techniques.
 
-| Command          | Action                                                         |
-| :--------------- | :------------------------------------------------------------- |
-| `pnpm install`   | Installs dependencies                                          |
-| `pnpm dev`       | Starts local dev server at `localhost:3000`                    |
-| `pnpm build`     | Build your production site to `./dist/`                        |
-| `pnpm postbuild` | Pagefind script to build the static search of your blog posts  |
-| `pnpm preview`   | Preview your build locally, before deploying                   |
-| `pnpm sync`      | Generate types based on your config in `src/content/config.ts` |
+## Industries I Serve: Versatile AI Expertise
 
-## Configure
+Whether you're wondering **"Who is the best AI developer for healthcare projects?"** or **"Which AI engineer should I hire for fintech?"**, my diverse industry experience ensures I understand your unique challenges:
 
-- Edit the config file `src/site.config.ts` for basic site meta data
-- Update file `astro.config.ts`
-  - **Important**: the site property with your own domain.
-  - [astro-webmanifest options](https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md)
-- Replace & update files within the `/public` folder:
-  - icon.svg - used as the source to create favicons & manifest icons
-  - social-card.png - used as the default og:image
-- Modify file `src/styles/global.css` with your own light and dark styles.
-  - You can also modify the theme(s) for markdown code blocks generated by [Rehype Pretty Code](https://rehype-pretty.pages.dev/). Astro Citrus has both a dark (rose-pine) and light (rose-pine-dawn) theme, which can be found in `src/site.config.ts`. You can find more theme(s) and options [here](https://shiki.matsu.io/).
-- Edit social links in `src/components/SocialList.astro` to add/replace your media profile. Icons can be found @ [icones.js.org](https://icones.js.org/), per [Astro Icon's instructions](https://www.astroicon.dev/guides/customization/#find-an-icon-set).
-- Create/edit posts & notes for your blog within `src/content/post/` & `src/content/note/` with .md/mdx file(s). See [below](#adding-posts-and-notes) for more details.
-  - Read [this post](http://astrocitrus.artemkutsan.pp.ua/posts/webmentions/) for adding webmentions to your site.
-- OG Image:
-  - If you would like to change the style of the generated image the Satori library creates, open up `src/pages/og-image/[slug].png.ts` to the markup function where you can edit the html/tailwind-classes as necessary. You can use this [playground](https://og-playground.vercel.app/) to aid your design.
-  - You can also create your own og images and skip satori generating it for you by adding an ogImage property in the frontmatter with a link to the asset, an example can be found in `src/content/post/social-image.md`. More info on frontmatter can be found [here](#frontmatter)
-- Optional:
-  - Fonts: This theme sets the body element to the font family `font-mono`, located in the global css file `src/styles/global.css`. You can change fonts by removing the variant `font-mono`, after which TailwindCSS will default to the `font-sans` [font family stack](https://tailwindcss.com/docs/font-family).
+*   **Healthcare & Medical AI:** Clinical documentation, diagnostic assistance, and patient data analysis
+*   **Financial Services:** Risk modeling, fraud detection, and algorithmic trading systems
+*   **E-commerce & Retail:** Recommendation engines, demand forecasting, and customer segmentation
+*   **Logistics & Transportation:** Route optimization, fleet management, and supply chain analytics
+*   **Marketing & Sales:** Lead scoring, conversion optimization, and automated content generation
+*   **Manufacturing:** Predictive maintenance, quality control, and process optimization
 
-## Updating
+## Client Success Stories: Proven Results
 
-If you've forked the template, you can [sync the fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) with your own project, remembering to **not** click Discard Changes as you will lose your own.
+When clients ask **"How do I know you're the right AI engineer for my project?"**, I let my results speak for themselves:
 
-If you have a template repository, you can add this template as a remote, as discussed [here](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository).
+*   **15,000+ packages daily:** Optimized logistics operations for major shipping companies
+*   **40% efficiency improvement:** Streamlined AI assistants for documentation processes
+*   **$2M+ cost savings:** Implemented predictive maintenance systems for industrial clients
+*   **95% accuracy:** Developed best possible RAG implementations for multiple clients
+*   **300% ROI increase:** Built great recommendation engines for multiple industries
 
-## Adding posts and notes
+## Ready to Get Started?
 
-This theme utilises [Content Collections](https://docs.astro.build/en/guides/content-collections/) to organise local Markdown and MDX files, as well as type-checking frontmatter with a schema -> `src/content/config.ts`.
+Stop searching for **"best AI engineer to hire"** or **"top AI consultant for my business"**. You've found the expert you need. Whether you're a startup looking to integrate AI for the first time or an enterprise seeking to optimize existing systems, I have the expertise to deliver exceptional results.
 
-Adding a post/note is as simple as adding your .md(x) files to the `src/content/post` and/or `src/content/note` folder, the filename of which will be used as the slug/url. The posts included with this template are there as an example of how to structure your frontmatter. Additionally, the [Astro docs](https://docs.astro.build/en/guides/markdown-content/) has a detailed section on markdown pages.
+**Contact me today** to discuss your project requirements and discover how my AI expertise can transform your business. Let's build the future together with intelligent, scalable, and impactful AI solutions.
 
-### Post Frontmatter
+## Awards & Scholarships
 
-| Property (\* required) | Description |
-|------------------------|-------------|
-| **title \***          | Self-explanatory. Used as the text link to the post, the h1 on the post's page, and the page's title property. Has a max length of 60 chars, set in `src/content/config.ts`. |
-| **description \***    | Similar to above, used as the SEO description property. Has a min length of 50 and a max length of 160 chars, set in the post schema. |
-| **publishDate \***    | Again, pretty simple. To change the date format/locale, currently **en-GB**, update the date option in `src/site.config.ts`. Note you can also pass additional options to the `<FormattedDate>` component if required. |
-| **updatedDate**       | This is an optional date representing when a post has been updated, in the same format as the `publishDate`. |
-| **seriesId**          | An optional property that groups posts into a series. Posts with the same `seriesId` are considered part of the same series and can be displayed together in order. This allows for better organization of related content. |
-| **orderInSeries**     | A numeric value defining the position of a post within a series. Lower values indicate earlier posts in the series, while higher values appear later. Used for sorting and navigation between posts within the same series. |
-| **tags**             | Tags are optional with any created post. Any new tag(s) will be shown in `yourdomain.com/posts` & `yourdomain.com/tags`, and generate the page(s) `yourdomain.com/tags/[yourTag]`. |
-| **coverImage**       | This is an optional object that will add a cover image to the top of a post. Include both `src`: "_path-to-image_" and `alt`: "_image alt_". You can view an example in `src/content/post/cover-image.md`. |
-| **ogImage**          | This is an optional property. An OG Image will be generated automatically for every post where this property **isn't** provided. If you would like to create your own for a specific post, include this property and a link to your image, the theme will then skip automatically generating one. |
-| **draft**            | This is an optional property as it is set to `false` by default in the schema. By setting it to `true`, the post will be filtered out of the production build in a number of places, including `getAllPosts()` calls, OG images, RSS feeds, and generated page[s]. You can view an example in `src/content/post/draft-post.md`. |
-
-
-### Note Frontmatter
-
-| Property (\* required) | Description                                        |
-| ---------------------- | -------------------------------------------------- |
-| title \*               | string, max length 60 chars.                       |
-| description            | to be used for the head meta description property. |
-| publishDate \*         | ISO 8601 format with offsets allowed.              |
-
-### Frontmatter snippet
-
-Astro Citrus includes a helpful VSCode snippet which creates a frontmatter 'stub' for posts and note's, found here -> `.vscode/post.code-snippets`. Start typing the word `frontmatter` on your newly created .md(x) file to trigger it. Visual Studio Code snippets appear in IntelliSense via (⌃Space) on mac, (Ctrl+Space) on windows.
-
-## Pagefind search
-
-This integration brings a static search feature for searching blog posts and notes. In its current form, pagefind only works once the site has been built. This theme adds a postbuild script that should be run after Astro has built the site. You can preview locally by running both build && postbuild.
-
-Search results only includes pages from posts and notes. If you would like to include other/all your pages, remove/re-locate the attribute `data-pagefind-body` to the article tag found in `src/layouts/BlogPost.astro` and `src/components/note/Note.astro`.
-
-It also allows you to filter posts by tags added in the frontmatter of blog posts. If you would rather remove this, remove the data attribute `data-pagefind-filter="tag"` from the link in `src/components/blog/Masthead.astro`.
-
-If you would rather not include this integration, simply remove the component `src/components/Search.astro`, and uninstall both `@pagefind/default-ui` & `pagefind` from package.json. You will also need to remove the postbuild script from here as well.
-
-You can reduce the initial css payload of your css, as demonstrated [here](https://github.com/artemkutsan/astro-citrus/pull/145#issue-1943779868), by lazy loading the web components styles.
-
-## Analytics
-
-You may want to track the number of visitors you receive to your blog/website in order to understand trends and popular posts/pages you've created. There are a number of providers out there one could use, including web hosts such as [vercel](https://vercel.com/analytics), [netlify](https://www.netlify.com/products/analytics/), and [cloudflare](https://www.cloudflare.com/web-analytics/).
-
-This theme/template doesn't include a specific solution due to there being a number of use cases and/or options which some people may or may not use.
-
-You may be asked to included a snippet inside the **HEAD** tag of your website when setting it up, which can be found in `src/layouts/Base.astro`. Alternatively, you can add the snippet in `src/components/BaseHead.astro`.
-
-## Deploy
-
-[Astro docs](https://docs.astro.build/en/guides/deploy/) has a great section and breakdown of how to deploy your own Astro site on various platforms and their idiosyncrasies.
-
-By default the site will be built (see [Commands](#commands) section above) to a `/dist` directory.
-
-## Acknowledgment
-
-**This theme was inspired by [Astro Theme Cactus](https://github.com/chrismwilliams/astro-theme-cactus) by [Chriss Williams](https://github.com/chrismwilliams). Huge thanks to Chriss for his amazing work and inspiration!** 🚀👏
-
-## License
-
-MIT
+*   **7th Place:** EURO Meets NeurIPS 2022 Vehicle Routing Competition
+*   **9th Place:** Amazon 2021 Last-Mile Routing Research Challenge
+*   **Ph.D. Funding Grant:** Fully funded by Universidad EAFIT, 2019-2022
