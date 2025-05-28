@@ -1,11 +1,11 @@
 ---
-title: "WellAware - Industrial IoT Data Analytics"
-shortDescription: "Industrial automation and data analytics solutions for oil & gas operations"
+title: "WellAware - Industrial IoT Machine Learning"
+shortDescription: "Advanced ML for predictive & reactive maintenance in industrial IoT, optimizing oil & gas, water, and chemical monitoring operations."
 clientOrCompany: "WellAware"
 period: "2024-2025"
 displayYear: "2025"
-technologies: ["Python", "Data Analytics", "IoT", "Machine Learning", "Time Series Analysis", "Industrial Automation", "Oil & Gas"]
-imageUrls: ["/images/screenshot01.png", "/images/screenshot02.png", "/images/screenshot03.png"]
+technologies: ["Machine Learning", "AWS", "SageMaker", "MLFlow", "Metaflow", "Data Analytics"]
+imageUrls: ["/projects/wellaware/WellAware_ComputeriPhoneDevice_Mockup_1.png", "/projects/wellaware/3D-Tank-Skid-high-res_r4-scaled.webp", "/projects/wellaware/confusion_matrix_multiclass_xgboost.png", "/projects/wellaware/wellaware_voltages.png"]
 projectUrl: "https://wellaware.us/"
 order: 1
 draft: false
@@ -13,29 +13,30 @@ draft: false
 
 ## Project Overview
 
-WellAware is a leading provider of industrial automation and data analytics solutions for the oil and gas industry. I collaborated with their team to enhance their data analytics capabilities and develop advanced machine learning solutions for industrial IoT monitoring applications.
+WellAware specializes in industrial automation and data analytics solutions, primarily for the oil and gas industry. My collaboration focused on enhancing their predictive and reactive maintenance capabilities. I developed a traditional machine learning solution that processes sensor data from various field equipment, such as pumps, solar chargers, and batteries to proactively identify potential operational issues. This system was designed to improve maintenance schedules and overall equipment reliability.
 
 ## Key Contributions
 
-### Advanced Data Analytics Platform
-- Developed sophisticated analytics algorithms for industrial IoT sensor data
-- Implemented machine learning models for predictive maintenance and anomaly detection
-- Created real-time data processing pipelines for oil and gas operations
+### Predictive Maintenance ML Solution
+- Developed and deployed a machine learning model on AWS SageMaker to predict equipment malfunctions using sensor data.
+- Utilized MLFlow and Metaflow for robust MLOps, managing the machine learning lifecycle from experimentation to deployment.
+- Engineered features from sensor inputs to accurately detect anomalies and predict failures in equipment like pumps, solar chargers, and batteries.
 
-### Predictive Analytics Solutions
-- Built predictive models for equipment failure prevention
-- Developed time series analysis solutions for operational optimization
-- Implemented automated alerting systems for critical operational parameters
+### Advanced Data Analytics & Integration
+- Designed and implemented sophisticated analytics algorithms for processing and interpreting industrial IoT sensor data.
+- Created real-time data processing pipelines for continuous monitoring and analysis within water wells, chemical tanks, and oil and gas operations.
+- Ensured seamless integration of the ML solution with WellAware's existing data infrastructure and sensor networks.
 
-### Industrial IoT Integration
-- Designed data integration solutions for various industrial sensors and devices
-- Created scalable data processing architectures for high-volume IoT data streams
-- Implemented edge computing solutions for real-time decision making
+### Operational Impact Focus
+- Built predictive models specifically aimed at preventing equipment failure and minimizing downtime.
+- Developed time series analysis solutions to optimize operational performance and resource allocation.
+- Implemented automated alerting systems to notify stakeholders of critical operational parameters and predicted issues.
+
 
 ## Impact
 
-The enhanced analytics platform provided WellAware's clients with improved operational efficiency, reduced downtime through predictive maintenance, and better decision-making capabilities through advanced data insights. The solutions helped optimize oil and gas operations while reducing operational costs.
+The predictive and reactive maintenance solution and enhanced analytics platform provided WellAware's clients with significant improvements in operational efficiency. This was achieved through reduced equipment downtime, optimized maintenance schedules, and more informed decision-making capabilities driven by advanced data insights. The solutions contributed to optimizing systems operations while also helping to reduce operational costs.
 
 ## Technologies Used
 
-The project utilized cutting-edge data science and machine learning technologies specifically designed for industrial applications, ensuring robust performance in challenging oil and gas environments. 
+The project utilized a range of data science and machine learning technologies, including Python, Pandas, and Scikit-learn, deployed on AWS SageMaker. MLFlow and Metaflow were used for MLOps. The system was specifically designed for industrial IoT applications, ensuring robust performance in demanding oil and gas environments. 
