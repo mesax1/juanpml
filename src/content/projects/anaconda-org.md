@@ -5,7 +5,7 @@ clientOrCompany: "Anaconda Org"
 period: "2024-2025"
 displayYear: "2025"
 technologies: ["RAG", "LLMs", "Kubernetes", "Milvus", "PostgreSQL", "Phoenix - Arize"]
-imageUrls: []
+imageUrls: ["/projects/anaconda/Anaconda_logo_green.png"]
 projectUrl: "https://anaconda.org/"
 order: 2
 draft: false

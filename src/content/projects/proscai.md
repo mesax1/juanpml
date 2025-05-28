@@ -5,7 +5,7 @@ clientOrCompany: "Proscai"
 period: "2025"
 displayYear: "2025"
 technologies: ["Anthropic", "RAG", "Langgraph", "Langsmith"]
-imageUrls: []
+imageUrls: ["/projects/proscai/proscai-logo.png"]
 projectUrl: "https://www.proscai.com/"
 order: 4
 draft: false

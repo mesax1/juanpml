@@ -5,7 +5,7 @@ displayYear: "2020-2022"
 shortDescription: "Vehicle Routing Problem (VRP) expertise and optimization solutions for logistics and transportation companies."
 technologies: ["Django", "Optimization Algorithms", "OR-Tools", "Mathematical Modeling", "Meta-Heuristics"]
 roles: ["Optimization Engineer", "VRP Specialist"]
-imageUrls: []
+imageUrls: ["/projects/vrp_projects/logo-coordinadora.svg", "/projects/vrp_projects/rideco-logo.svg"]
 draft: false
 order: 18
 ---

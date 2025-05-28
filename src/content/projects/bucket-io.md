@@ -5,7 +5,7 @@ clientOrCompany: "Bucket.io"
 period: "2023-2024"
 displayYear: "2023"
 technologies: ["LLMs", "Django", "OpenAI", "Langchain", "RAG", "Qdrant"]
-imageUrls: []
+imageUrls: ["/projects/bucket/new-bucket-logo.svg","/projects/bucket/bucket-quiz.png", "/projects/bucket/bucketai.png"]
 projectUrl: "https://bucket.io/"
 order: 16
 draft: false

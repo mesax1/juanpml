@@ -5,7 +5,7 @@ clientOrCompany: "12Tren"
 period: "2023-2024"
 displayYear: "2023"
 technologies: ["Python", "Machine Learning", "Transportation Analytics", "Route Optimization", "Predictive Analytics", "Logistics"]
-imageUrls: []
+imageUrls: ["/projects/12tren/12tren-logo.png"]
 projectUrl: "https://12tren.com/"
 order: 19
 draft: false

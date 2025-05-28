@@ -5,7 +5,7 @@ clientOrCompany: "Bonded LP"
 period: "2024"
 displayYear: "2024"
 technologies: ["ColPALI", "Vespa", "RAG", "LLMs", "VLLMs"]
-imageUrls: []
+imageUrls: ["/projects/bondedlp/bonded-lp-logo.png"]
 projectUrl: "https://www.bondedlp.com/"
 order: 5
 draft: false

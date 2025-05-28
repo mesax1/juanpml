@@ -5,7 +5,7 @@ clientOrCompany: "WellAware"
 period: "2024-2025"
 displayYear: "2025"
 technologies: ["Machine Learning", "AWS", "SageMaker", "MLFlow", "Metaflow", "Data Analytics"]
-imageUrls: ["/projects/wellaware/WellAware_ComputeriPhoneDevice_Mockup_1.png", "/projects/wellaware/3D-Tank-Skid-high-res_r4-scaled.webp", "/projects/wellaware/confusion_matrix_multiclass_xgboost.png", "/projects/wellaware/wellaware_voltages.png"]
+imageUrls: ["/projects/wellaware/WellAware_ComputeriPhoneDevice_Mockup_1.png", "/projects/wellaware/3D-Tank-Skid-high-res_r4-scaled.webp", "/projects/wellaware/wellaware_voltages.png"] #projects/wellaware/confusion_matrix_multiclass_xgboost.png", 
 projectUrl: "https://wellaware.us/"
 order: 1
 draft: false

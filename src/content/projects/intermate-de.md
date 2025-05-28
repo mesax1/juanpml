@@ -5,7 +5,7 @@ clientOrCompany: "Intermate.de"
 period: "2023-2024"
 displayYear: "2023"
 technologies: ["Python", "Machine Learning", "Hugging Face", "Langchain", "FastAPI", "CLIP", "AWS"]
-imageUrls: []
+imageUrls: ["/projects/intermate/Intermate_Logo_Black.svg"]
 projectUrl: "https://intermate.de/"
 order: 15
 draft: false

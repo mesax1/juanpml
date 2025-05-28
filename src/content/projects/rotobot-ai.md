@@ -8,7 +8,7 @@ technologies: ["Langchain", "FastAPI", "OpenAI", "Qdrant", "PostgreSQL", "Azure"
 roles: ["Main AI Engineer"]
 contraLink: "https://contra.com/p/vYkEZ6vW-ai-enhanced-chatbot-for-fantasy-football"
 projectUrl: "https://rotobot.ai/"
-imageUrls: ["/projects/rotobot/image-chat.png", "/projects/rotobot/image.png", "/projects/rotobot/Captura de pantalla 2024-07-11 002159.png", "/projects/rotobot/Captura de pantalla 2024-07-11 002142.png", "/projects/rotobot/Captura de pantalla 2024-07-11 002107.png"]
+imageUrls: ["/projects/rotobot/image-chat.png", "/projects/rotobot/Captura de pantalla 2024-07-11 002159.png", "/projects/rotobot/Captura de pantalla 2024-07-11 002142.png"]
 draft: false
 order: 10
 ---
