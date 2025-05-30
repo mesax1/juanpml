@@ -130,7 +130,10 @@ export default defineConfig({
   prefetch: true,
   // ! Please remember to replace the following site property with your own domain
   site: "https://juanpml.com/",
-  trailingSlash: 'always',
+  trailingSlash: 'never',
+  build: {
+    format: 'file', // This is crucial for 'never' trailing slash
+  },
   vite: {
     build: {
       sourcemap: true, // Source maps generation
