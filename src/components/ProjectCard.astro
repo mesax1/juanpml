@@ -12,7 +12,7 @@ const { data, id } = project;
 const { title, clientOrCompany, displayYear, shortDescription, technologies, imageUrls } = data;
 
 const primaryImageUrl = imageUrls && imageUrls.length > 0 ? imageUrls[0] : undefined;
-const projectLink = `/projects/${id}`;
+const projectLink = `/projects/${id}/`;
 ---
 
 <a href={projectLink} class="group block h-full">

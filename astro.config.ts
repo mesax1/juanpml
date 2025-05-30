@@ -37,7 +37,15 @@ export default defineConfig({
       applyBaseStyles: false,
       nesting: true,
     }),
-    sitemap(),
+    sitemap({
+      serialize(item) {
+        // Ensure all URLs in the sitemap have trailing slashes
+        if (item.url && !item.url.endsWith('/')) {
+          item.url = item.url + '/';
+        }
+        return item;
+      },
+    }),
     mdx(),
     robotsTxt(),
     webmanifest({
@@ -130,9 +138,9 @@ export default defineConfig({
   prefetch: true,
   // ! Please remember to replace the following site property with your own domain
   site: "https://juanpml.com/",
-  trailingSlash: 'never',
+  trailingSlash: 'always',
   build: {
-    format: 'file', // This is crucial for 'never' trailing slash
+    format: 'directory', // This is crucial for 'always' trailing slash
   },
   vite: {
     build: {

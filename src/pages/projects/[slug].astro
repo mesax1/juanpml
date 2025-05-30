@@ -5,10 +5,10 @@ import type { SiteMeta } from '@/types';
 import type { CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
-  const projects = await getCollection('projects', ({ data }) => {
+  const projects = await getCollection('projects', ({ data }: CollectionEntry<'projects'>) => {
     return data.draft !== true;
   });
-  return projects.map(project => ({
+  return projects.map((project: CollectionEntry<'projects'>) => ({
     params: { slug: project.id },
     props: { project },
   }));
@@ -109,7 +109,7 @@ const meta: SiteMeta = {
         </a>
       )}
       <a 
-        href="/projects"
+        href="/projects/"
         class="inline-flex items-center justify-center px-6 py-3 bg-special-light text-textColor font-semibold rounded-lg hover:bg-special-lighter transition-all"
       >
         ← Back to Projects
