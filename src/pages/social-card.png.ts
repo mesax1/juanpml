@@ -2,16 +2,13 @@ import SFProRoundedBold from "@/assets/fonts/SF-Pro-Rounded-Bold.latin.base.ttf"
 import SFProRoundedSemibold from "@/assets/fonts/SF-Pro-Rounded-Semibold.latin.base.ttf";
 import SFProRoundedMedium from "@/assets/fonts/SF-Pro-Rounded-Medium.latin.base.ttf";
 import SFProRoundedRegular from "@/assets/fonts/SF-Pro-Rounded-Regular.latin.base.ttf";
-import { getAllPosts } from "@/data/post";
 import { siteConfig } from "@/site.config";
-import { getFormattedDate } from "@/utils/date";
 import { Resvg } from "@resvg/resvg-js";
-import type { APIContext, InferGetStaticPropsType } from "astro";
+import type { APIContext } from "astro";
 import satori, { type SatoriOptions } from "satori";
 import { html } from "satori-html";
 
 const ogOptions: SatoriOptions = {
-  // debug: true,
   fonts: [
     {
       data: Buffer.from(SFProRoundedRegular),
@@ -19,7 +16,6 @@ const ogOptions: SatoriOptions = {
       style: "normal",
       weight: 400,
     },
-	
     {
       data: Buffer.from(SFProRoundedMedium),
       name: "SF Pro Rounded",
@@ -43,21 +39,17 @@ const ogOptions: SatoriOptions = {
   width: 1200,
 };
 
-const markup = (title: string, pubDate: string) =>
+const markup = () =>
   html` <div tw="flex flex-col w-full h-full bg-[#f2f2f2] text-[#6b6b6b]">
-    <div tw="flex flex-col flex-1 w-full p-10 justify-center">
-      <p tw="text-3xl mb-6 text-[#8e8e8e] font-medium">${pubDate}</p>
-      <h1 tw="text-6xl font-semibold leading-snug text-[#224d67]">${title}</h1>
-    </div>
-    <div
-      tw="flex items-end justify-between w-full p-10 border-t border-[#dbdbdb] text-3xl text-[#6b6b6b]"
-    >
-      <div tw="flex items-center">
+    <div tw="flex flex-col flex-1 w-full p-10 justify-center items-center text-center">
+      <h1 tw="text-7xl font-bold leading-tight text-[#224d67] mb-4">${siteConfig.title}</h1>
+      <p tw="text-4xl text-[#8e8e8e] font-medium mb-8">${siteConfig.description}</p>
+      <div tw="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 500"
-          width="64"
-          height="64"
+          width="80"
+          height="80"
         >
           <defs>
             <linearGradient id="gradient_0" gradientUnits="userSpaceOnUse" x1="154.46902" y1="214.42609" x2="266.38486" y2="214.52754">
@@ -75,75 +67,24 @@ const markup = (title: string, pubDate: string) =>
           <path fill="#9270D7" d="M286.051 208.198C286.506 211.288 286.147 214.462 286.415 217.579C286.196 217.259 285.988 216.964 285.85 216.597C284.345 212.591 285.562 212.028 286.051 208.198Z"/>
           <path fill="#9270D7" d="M280.175 274.098C280.452 274.343 280.707 274.57 280.878 274.906C281.423 275.976 281.208 276.988 280.86 278.076C280.874 276.53 279.961 275.641 280.175 274.098Z"/>
           <path fill="#9270D7" d="M265.685 95.6107C266.065 94.71 266.642 86.8636 266.381 85.8615C266.22 85.244 266.239 85.5844 266.299 84.9733C267.881 84.0896 269.063 86.458 270.732 86.684C277.837 92.8311 279.31 101.784 279.943 110.568C280.801 122.482 279.867 134.375 280.569 146.268C281.634 164.335 284.308 182.275 285.555 200.336L284.864 199.313L284.541 199.56C284.457 200.751 284.732 202.18 284.195 203.248L283.903 203.263C283.855 202.786 283.871 202.392 283.931 201.921C284.011 201.297 283.938 200.868 283.799 200.258L283.605 200.031C282.341 201.548 282.836 207.153 282.611 209.341C282.443 210.971 281.912 212.855 281.956 214.466C281.964 214.791 281.987 214.83 282.055 215.103C282.144 214.742 282.219 214.035 282.452 213.766C282.493 215.01 282.725 216.759 282.21 217.894C281.736 217.803 281.645 217.699 281.288 217.395C280.492 219.531 281.269 222.704 281.201 225.003C281.152 226.694 280.364 228.314 280.419 229.965C280.941 230.623 281.081 230.721 281.159 231.587C280.992 231.781 280.813 231.93 280.641 232.1C280.594 232.146 280.312 232.526 280.268 232.584C280.657 233.222 281.744 234.566 281.879 235.225C282.197 236.788 281.143 237.964 281.939 240.042C282.376 241.181 283.102 242.993 282.444 244.133C281.843 245.176 280.933 245.627 281.089 246.983C281.203 247.972 282.249 248.532 282.277 249.547C282.317 251.028 281.418 252.529 281.12 253.97C280.884 255.11 281.081 256.297 280.82 257.403C280.529 258.637 278.646 262.797 280.108 263.737C280.448 263.456 280.575 263.286 280.804 262.922C281.402 263.883 281.105 265.007 280.866 266.042C280.566 267.344 280.106 268.632 279.582 269.857L279.122 269.699C278.225 260.958 277.565 252.052 277.573 243.262C277.581 234.472 278.169 225.747 277.809 216.952C276.85 193.498 273.544 170.184 271.787 146.789C271.543 143.542 271.269 140.269 271.243 137.013C271.182 129.369 271.672 121.542 270.711 113.943C269.927 107.739 269.304 100.887 265.685 95.6107Z"/>
-          <path fill="#9270D7" d="M286.034 247.629C286.506 251.174 286.066 254.772 286.432 258.331C285.89 257.569 285.658 256.711 285.163 255.916C284.372 254.645 285.517 252.219 285.749 250.881C285.934 249.819 285.967 248.705 286.034 247.629Z"/>
-          <path fill="#9270D7" d="M286.051 208.198C286.506 211.288 286.147 214.462 286.415 217.579C286.196 217.259 285.988 216.964 285.85 216.597C284.345 212.591 285.562 212.028 286.051 208.198Z"/>
-          <path fill="#9270D7" d="M280.175 274.098C280.452 274.343 280.707 274.57 280.878 274.906C281.423 275.976 281.208 276.988 280.86 278.076C280.874 276.53 279.961 275.641 280.175 274.098Z"/>
-          <path fill="#9270D7" d="M265.685 95.6107C266.065 94.71 266.642 86.8636 266.381 85.8615C266.22 85.244 266.239 85.5844 266.299 84.9733C267.881 84.0896 269.063 86.458 270.732 86.684C277.837 92.8311 279.31 101.784 279.943 110.568C280.801 122.482 279.867 134.375 280.569 146.268C281.634 164.335 284.308 182.275 285.555 200.336L284.864 199.313L284.541 199.56C284.457 200.751 284.732 202.18 284.195 203.248L283.903 203.263C283.855 202.786 283.871 202.392 283.931 201.921C284.011 201.297 283.938 200.868 283.799 200.258L283.605 200.031C282.341 201.548 282.836 207.153 282.611 209.341C282.443 210.971 281.912 212.855 281.956 214.466C281.964 214.791 281.987 214.83 282.055 215.103C282.144 214.742 282.219 214.035 282.452 213.766C282.493 215.01 282.725 216.759 282.21 217.894C281.736 217.803 281.645 217.699 281.288 217.395C280.492 219.531 281.269 222.704 281.201 225.003C281.152 226.694 280.364 228.314 280.419 229.965C280.941 230.623 281.081 230.721 281.159 231.587C280.992 231.781 280.813 231.93 280.641 232.1C280.594 232.146 280.312 232.526 280.268 232.584C280.657 233.222 281.744 234.566 281.879 235.225C282.197 236.788 281.143 237.964 281.939 240.042C282.376 241.181 283.102 242.993 282.444 244.133C281.843 245.176 280.933 245.627 281.089 246.983C281.203 247.972 282.249 248.532 282.277 249.547C282.317 251.028 281.418 252.529 281.12 253.97C280.884 255.11 281.081 256.297 280.82 257.403C280.529 258.637 278.646 262.797 280.108 263.737C280.448 263.456 280.575 263.286 280.804 262.922C281.402 263.883 281.105 265.007 280.866 266.042C280.566 267.344 280.106 268.632 279.582 269.857L279.122 269.699C278.225 260.958 277.565 252.052 277.573 243.262C277.581 234.472 278.169 225.747 277.809 216.952C276.85 193.498 273.544 170.184 271.787 146.789C271.543 143.542 271.269 140.269 271.243 137.013C271.182 129.369 271.672 121.542 270.711 113.943C269.927 107.739 269.304 100.887 265.685 95.6107Z"/>
         </svg>
-        <p tw="ml-3 text-5xl text-[#545454] font-bold">${siteConfig.title}</p>
       </div>
-      <p tw="text-3xl text-[#8e8e8e]">by ${siteConfig.author}</p>
+    </div>
+    <div
+      tw="flex items-center justify-center w-full p-10 border-t border-[#dbdbdb] text-3xl text-[#8e8e8e]"
+    >
+      <p>Applied AI Consulting • ML • LLMs • RAG</p>
     </div>
   </div>`;
 
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
-
 export async function GET(context: APIContext) {
-  const { pubDate, title } = context.props as Props;
-  const postDate = getFormattedDate(pubDate, {
-    month: "long",
-    weekday: "long",
+  const svg = await satori(markup(), ogOptions);
+  const png = new Resvg(svg).render().asPng();
+  
+  return new Response(png, {
+    headers: {
+      "Cache-Control": "public, max-age=31536000, immutable",
+      "Content-Type": "image/png",
+    },
   });
-  const svg = await satori(markup(title, postDate), ogOptions);
-
-  // Get the format from the params instead of checking the URL pathname
-  const format = context.params.ext;
-
-  // Check if the user is requesting PNG
-  if (format === "png") {
-    const png = new Resvg(svg).render().asPng();
-    return new Response(png, {
-      headers: {
-        "Cache-Control": "public, max-age=31536000, immutable",
-        "Content-Type": "image/png",
-      },
-    });
-  }
-
-  // Check if the user is requesting SVG
-  if (format === "svg") {
-    return new Response(svg, {
-      headers: {
-        "Cache-Control": "public, max-age=31536000",
-        "Content-Type": "image/svg+xml; charset=utf-8",
-      },
-    });
-  }
-
-  // If the format is not png or svg, return an error
-  return new Response("Unsupported format", { status: 400 });
-}
-
-export async function getStaticPaths() {
-  const posts = await getAllPosts();
-  return posts
-    .filter(({ data }) => !data.ogImage)
-    .flatMap((post) => {
-      return [
-        {
-          params: { slug: post.id, ext: "png" },
-          props: {
-            pubDate: post.data.updatedDate ?? post.data.publishDate,
-            title: post.data.title,
-          },
-        },
-        {
-          params: { slug: post.id, ext: "svg" },
-          props: {
-            pubDate: post.data.updatedDate ?? post.data.publishDate,
-            title: post.data.title,
-          },
-        },
-      ];
-    });
-}
+} 
