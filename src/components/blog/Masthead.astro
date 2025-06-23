@@ -94,30 +94,30 @@ const postSeries = content.data.seriesId
 
 {content.data.draft ? <span class="text-base text-red-500 ml-2">(Draft)</span> : null}
 
-<div class="mx-auto max-w-3xl">
+<div class="mx-auto max-w-3xl px-4">
 	<p 
 		class="prose text-textColor leading-relaxed mb-6"
 		data-pagefind-body
 	>
 		{content.data.description}
 	</p>
-</div>
 
-{
-	content.data.coverImage && (
-		<div class="mb-4 mt-2 mx-auto max-w-2xl overflow-hidden rounded-lg">
-			<Image
-				alt={content.data.coverImage.alt}
-				class="w-full"
-				width={400}
-				height={400}
-				fetchpriority="high"
-				loading="lazy" // loading="eager"
-				src={content.data.coverImage.src}
-			/>
-		</div>
-	)
-}
+	{
+		content.data.coverImage && (
+			<div class="mb-4 mt-2 overflow-hidden rounded-lg">
+				<Image
+					alt={content.data.coverImage.alt}
+					class="w-full"
+					width={400}
+					height={400}
+					fetchpriority="high"
+					loading="lazy" // loading="eager"
+					src={content.data.coverImage.src}
+				/>
+			</div>
+		)
+	}
+</div>
 
 <div class="mt-4 flex flex-wrap items-center gap-2 mx-1">
 	{/* Tags */}
