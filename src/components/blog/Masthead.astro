@@ -99,7 +99,7 @@ const postSeries = content.data.seriesId
 		<div class="mb-4 mt-2 overflow-auto rounded-lg">
 			<Image
 				alt={content.data.coverImage.alt}
-				class="object-cover"
+				class="object-cover w-full max-h-96 md:max-h-80"
 				fetchpriority="high"
 				loading="lazy" // loading="eager"
 				src={content.data.coverImage.src}
@@ -108,12 +108,14 @@ const postSeries = content.data.seriesId
 	)
 }
 
-<p 
-	class="prose max-w-none text-textColor mx-2"
-	data-pagefind-body
->
-	{content.data.description}
-</p>
+<div class="mx-auto max-w-3xl px-4">
+	<p 
+		class="prose text-textColor leading-relaxed"
+		data-pagefind-body
+	>
+		{content.data.description}
+	</p>
+</div>
 
 <div class="mt-4 flex flex-wrap items-center gap-2 mx-1">
 	{/* Tags */}
