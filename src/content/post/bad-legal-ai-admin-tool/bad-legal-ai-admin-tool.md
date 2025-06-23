@@ -5,9 +5,13 @@ A potential client's request for a flawless, AI-powered deadline manager serves 
 publishDate: "2025-06-22"
 tags: ["AI", "Legal", "Admin Tool", "Bad AI Ideas"]
 seriesId: "bad_ai_ideas"
+coverImage:
+  src: "./ai-hammer.png"
+  alt: "AI and Legal Technology - The intersection of artificial intelligence and legal systems"
 orderInSeries: 1
 draft: false
 ---
+
 
 As you may already know, everyone is talking about AI and how it will change the way we work. There are a lot of people who want to build AI tools for different industries, either to help their clients or to help themselves.
 
