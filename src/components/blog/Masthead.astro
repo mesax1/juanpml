@@ -103,14 +103,14 @@ const postSeries = content.data.seriesId
 
 {
 	content.data.coverImage && (
-		<div class="mb-4 mt-2 overflow-hidden rounded-lg mx-2 max-w-md">
+		<div class="mb-6 mt-4 overflow-hidden rounded-lg mx-2 max-w-lg mx-auto">
 			<Image
 				alt={content.data.coverImage.alt}
-				class="w-full"
-				width={800}
-				height={800}
+				class="w-full h-auto object-cover"
+				width={600}
+				height={600}
 				fetchpriority="high"
-				loading="lazy" // loading="eager"
+				loading="lazy"
 				src={content.data.coverImage.src}
 			/>
 		</div>
