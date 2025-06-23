@@ -15,7 +15,7 @@ const { post } = Astro.props;
 const { ogImage, title, description, updatedDate, publishDate, seriesId, coverImage } = post.data;
 
 // Priority: coverImage -> ogImage -> generated OG image
-const socialImage = coverImage?.src ? coverImage.src.src : (ogImage ?? `/og-image/${post.id}.png`);
+const socialImage = coverImage?.src?.src || ogImage || `/og-image/${post.id}.png`;
 const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString();
 const { headings } = await render(post);
 ---
