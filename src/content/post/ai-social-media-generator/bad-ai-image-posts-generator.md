@@ -1,7 +1,7 @@
 ---
 title: "Bad AI Ideas: Image-Posts Generator for Social Media"
 description: "The second installment in our 'Bad AI Ideas' series examines a recurring request from marketing companies: building an AI system that automatically generates editable image-posts for social media. We explore why this seemingly straightforward idea presents significant technical and business challenges."
-publishDate: "2025-01-22"
+publishDate: "2025-07-01"
 tags: ["AI", "Marketing", "Social Media", "Design", "Bad AI Ideas"]
 seriesId: "bad_ai_ideas"
 coverImage:
@@ -112,12 +112,11 @@ Rather than building a monolithic AI design tool, successful projects in this sp
 
 - **Accept the layer limitation.** Current AI cannot generate true multi-layer designs. Any solution must either work with flattened images or integrate with existing design platforms that handle layer management.
 
-- **Solve the logo problem first.** Before tackling full design generation, focus on developing reliable methods for incorporating existing brand assets into AI-generated content. This likely requires hybrid approaches combining traditional asset management with AI generation.
 
-- **Focus on workflow integration.** Instead of replacing design tools, create AI assistants that work alongside existing platforms, providing suggestions, automating repetitive tasks, or generating initial concepts that designers can refine.
+- **Focus on workflow integration.** Instead of replacing design tools, create AI assistants that work alongside existing platforms, providing suggestions, automating repetitive tasks, or generating initial concepts that designers can refine or use as inspiration.
 
-- **Plan for hybrid solutions.** The most viable approach may be combining AI generation for backgrounds and layouts with traditional asset placement for logos, text, and brand elements.
+- **Plan for hybrid solutions.** The most viable approach may be combining AI generation for copy generation, and for image generation of backgrounds and layouts with traditional asset placement for logos, images, and brand elements.
 
-The goal should be augmenting existing design workflows with AI capabilities that respect both technical limitations and professional design practices. DO not try to replace Graphic Designers, but rather augment their work, and make their job easier, faster, better, more efficient, or even all of them at the same time.
+The goal should be augmenting existing design workflows with AI capabilities that respect both technical limitations and professional design practices. Do not try to replace Graphic Designers, but rather augment their work, and make their job easier, faster, better, more efficient, or even all of them at the same time.
 
 If you're considering an AI project in the marketing or design space (or any other field), I'm available for consulting to help you identify realistic, valuable applications of AI technology that work within current technical constraints. 
