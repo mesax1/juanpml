@@ -6,7 +6,7 @@ tags: ["AI", "Marketing", "Social Media", "Design", "Bad AI Ideas"]
 seriesId: "bad_ai_ideas"
 coverImage:
   src: "./social-media-ai-optimized.png"
-  alt: "AI-generated social media content and design automation"
+  alt: "AI-generated social media content and design automation, with robotic hand."
 orderInSeries: 2
 draft: false
 ---
