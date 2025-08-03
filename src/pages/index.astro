@@ -263,9 +263,10 @@ const allPostsByDate = allPosts
 				<!-- Mobile: Cards layout -->
 				<div class="block lg:hidden space-y-6">
 					{[
+						{ name: "Peter Quinn", role: "Cofounder of Ask Clio", quote: "Juan was great to work with!"},
 						{ name: "Adan Ordoñez", role: "Founder of ACristoEngine", quote: "Juan was a true professional and was very knowledgeable. With his help, we were able to create a RAG application in a very efficient time frame." },
 						{ name: "David Zinland", role: "Cofounder of Rotobot.ai", quote: "Juan is an excellent AI engineer. He is very thoughtful and makes sure to clarify the conversation at all times. He has a vast amount of experience and practical expertise which he can use very effectively." },
-						{ name: "Jose Gutierrez", role: "Co-founder of Codelum", quote: "Juan has a lot of knowledge in the area of AI and Machine Learning, he gave me an idea of how to start our project. We will definitely use him as a right-hand man in our development." }
+						{ name: "Jose Gutierrez", role: "Cofounder of Codelum", quote: "Juan has a lot of knowledge in the area of AI and Machine Learning, he gave me an idea of how to start our project. We will definitely use him as a right-hand man in our development." }
 					].map(testimonial => (
 						<blockquote class="bg-bgColor/50 border border-special-light rounded-lg p-6">
 							<p class="text-sm sm:text-base leading-relaxed mb-4 italic text-light">
@@ -290,6 +291,11 @@ const allPostsByDate = allPosts
 					</tr>
 				</thead>
 						<tbody class="text-sm">
+						<tr class="border-b border-special-light/50 hover:bg-bgColor/30 transition-colors">
+								<td class="align-top py-4 px-4 font-medium">Pet</td>
+								<td class="align-top py-4 px-4 text-lighter">Founder of Ask Clio</td>
+								<td class="align-top py-4 px-4">"Juan was great to work with!"</td>
+					</tr>
 							<tr class="border-b border-special-light/50 hover:bg-bgColor/30 transition-colors">
 								<td class="align-top py-4 px-4 font-medium">Adan Ordoñez</td>
 								<td class="align-top py-4 px-4 text-lighter">Founder of ACristoEngine</td>
