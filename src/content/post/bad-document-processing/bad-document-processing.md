@@ -1,12 +1,12 @@
 ---
 title: "Bad AI Ideas: Automating Complex Document Processing"
-description: "In the third part of our 'Bad AI Ideas' series, we examine a request to fully automate a 2000-page document workflow. This case highlights why aiming for 100% automation from the start is a common failure pattern and why human-in-the-loop systems are a more realistic approach."
-publishDate: "2025-07-08"
+description: "In the third part of our 'Bad AI Ideas' series, we examine a request to fully automate a 2000-page document processing workflow. This case highlights why aiming for 100% automation from the start is a common failure pattern and why human-in-the-loop systems are a more realistic approach."
+publishDate: "2025-08-06"
 tags: ["AI", "Document Processing", "Automation", "Bad AI Ideas"]
 seriesId: "bad_ai_ideas"
 coverImage:
   src: "./document-automation-ai.png"
-  alt: "An AI robot sorting through a large stack of documents, symbolizing document processing automation."
+  alt: "An AI robot sorting through a large stack of documents, searching for important pages."
 orderInSeries: 3
 draft: false
 ---
